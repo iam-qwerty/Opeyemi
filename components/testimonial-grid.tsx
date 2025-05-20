@@ -17,9 +17,14 @@ interface Testimonial {
 interface TestimonialGridProps {
   testimonials: Testimonial[]
   initialDisplayCount?: number
+  variant?: "light" | "olive" // Add variant prop
 }
 
-export function TestimonialGrid({ testimonials, initialDisplayCount = 3 }: TestimonialGridProps) {
+export function TestimonialGrid({
+  testimonials,
+  initialDisplayCount = 3,
+  variant = "light", // Default to light variant
+}: TestimonialGridProps) {
   const [displayCount, setDisplayCount] = useState(initialDisplayCount)
   const hasMore = displayCount < testimonials.length
   const displayedTestimonials = testimonials.slice(0, displayCount)
@@ -31,6 +36,17 @@ export function TestimonialGrid({ testimonials, initialDisplayCount = 3 }: Testi
   const handleShowLess = () => {
     setDisplayCount(initialDisplayCount)
   }
+
+  // Define button styles based on variant
+  const buttonClasses =
+    variant === "olive"
+      ? "bg-cream text-olive-dark hover:bg-cream-dark group"
+      : "bg-background text-olive hover:bg-olive/10 group"
+
+  const buttonIconClasses =
+    variant === "olive"
+      ? "ml-2 h-4 w-4 text-olive-dark group-hover:animate-bounce"
+      : "ml-2 h-4 w-4 group-hover:animate-bounce"
 
   return (
     <div className="space-y-8">
@@ -44,6 +60,7 @@ export function TestimonialGrid({ testimonials, initialDisplayCount = 3 }: Testi
             quote={testimonial.quote}
             avatar={testimonial.avatar}
             delay={index * 100}
+            variant={variant}
           />
         ))}
       </div>
@@ -51,14 +68,22 @@ export function TestimonialGrid({ testimonials, initialDisplayCount = 3 }: Testi
       {testimonials.length > initialDisplayCount && (
         <div className="flex justify-center mt-8">
           {hasMore ? (
-            <Button variant="outline" onClick={handleShowMore} className="group">
+            <Button
+              variant={variant === "olive" ? "secondary" : "outline"}
+              onClick={handleShowMore}
+              className={buttonClasses}
+            >
               Show More
-              <ChevronDown className="ml-2 h-4 w-4 group-hover:animate-bounce" />
+              <ChevronDown className={buttonIconClasses} />
             </Button>
           ) : (
-            <Button variant="outline" onClick={handleShowLess} className="group">
+            <Button
+              variant={variant === "olive" ? "secondary" : "outline"}
+              onClick={handleShowLess}
+              className={buttonClasses}
+            >
               Show Less
-              <ChevronUp className="ml-2 h-4 w-4 group-hover:animate-bounce" />
+              <ChevronUp className={buttonIconClasses} />
             </Button>
           )}
         </div>
@@ -66,4 +91,3 @@ export function TestimonialGrid({ testimonials, initialDisplayCount = 3 }: Testi
     </div>
   )
 }
-

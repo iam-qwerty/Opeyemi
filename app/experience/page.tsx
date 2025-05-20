@@ -23,13 +23,11 @@ export default function ExperiencePage() {
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-24">
+        <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-olive text-cream overflow-hidden">
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="max-w-3xl mx-auto text-center space-y-6">
               <h1 className="text-4xl md:text-5xl font-bold tracking-tighter">My Experience</h1>
-              <p className="text-xl text-muted-foreground">
-                A journey of impact, leadership, and community transformation
-              </p>
+              <p className="text-xl text-cream">A journey of impact, leadership, and community transformation</p>
             </AnimationWrapper>
           </div>
         </section>
@@ -180,4 +178,3 @@ export default function ExperiencePage() {
     </div>
   )
 }
-

@@ -53,23 +53,32 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        olive: {
-          DEFAULT: "#7F8000", // Client's primary color
-          light: "#9A9B33",
-          dark: "#5F6000",
-          darker: "#303400", // Dark olive for footer
+        // Custom colors for the new scheme
+        darkOlive: {
+          DEFAULT: "#111E00", // Main background color
+          light: "#1A2E00", // Slightly lighter variant
+          lighter: "#243800", // Even lighter variant for contrast
+          dark: "#0A1500", // Darker variant
         },
         lavender: {
-          DEFAULT: "#C5C3F8", // Medium lavender (reduced prominence)
-          light: "#E7E6FB", // Light lavender (used sparingly)
-          dark: "#A3A1E6",
+          DEFAULT: "#E7E6FB", // Main text color
+          muted: "#C5C4E8", // Muted variant
+          dark: "#A3A2D1", // Darker variant
         },
-        terracotta: {
-          DEFAULT: "#C45E2E", // Complementary accent color
-          light: "#D67E56",
-          dark: "#A34A22",
+        // Keep olive colors for accents
+        olive: {
+          DEFAULT: "#7D8A2E", // Main olive green from image
+          light: "#9CA63B", // Lighter olive green from image
+          dark: "#6A7428", // Darker olive green for buttons
+          darker: "#4A5219", // Very dark olive for contrast
         },
-        white: "#FFFFFF",
+        cream: {
+          DEFAULT: "#E7E6FB", // Now using lavender instead of cream
+          light: "#F7F3E3", // Keeping for backward compatibility
+          dark: "#E5DCBA", // Keeping for backward compatibility
+        },
+        black: "#000000", // Pure black
+        white: "#FFFFFF", // Pure white
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -115,4 +124,3 @@ const config = {
 } satisfies Config
 
 export default config
-

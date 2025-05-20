@@ -58,32 +58,46 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <Navbar />
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+        {/* Hero Section with Olive Background */}
+        <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-[#111E00] text-cream">
           <div className="container-custom relative z-10">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <AnimationWrapper animation="fade-in-left" className="space-y-6">
-                <div className="inline-block rounded-lg bg-olive/10 px-3 py-1 text-sm text-olive">
+                <div className="inline-block rounded-lg bg-cream/20 backdrop-blur-sm px-3 py-1 text-sm text-cream">
                   For Global Impact and Meaningful Action
                 </div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
-                  <span className="olive-highlight">Welcome</span> to My World
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-cream">
+                  <span className="relative">
+                    Welcome
+                    <span className="absolute bottom-1 left-0 w-full h-2 bg-cream/30 -z-10 rounded-sm"></span>
+                  </span>{" "}
+                  to My World
                 </h1>
-                <p className="text-xl text-muted-foreground max-w-[600px]">
+                <p className="text-xl text-cream/90 max-w-[600px]">
                   Hey there, It's great to have you here! I'm Opeyemi Ogundeji.
                 </p>
-                <p className="text-lg text-muted-foreground max-w-[600px]">
+                <p className="text-lg text-cream/80 max-w-[600px]">
                   For over five years, I've been at the forefront of empowering marginalised groups, driving climate
                   action, decentralising policies, and building sustainable communities through inclusive development.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button asChild size="lg">
+                  <Button
+                    asChild
+                    size="lg"
+                    variant="secondary"
+                    className="bg-cream text-olive-dark hover:bg-cream-dark"
+                  >
                     <Link href="/about">
                       Read More About Me
                       <ChevronRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
-                  <Button variant="outline" size="lg" asChild className="border-olive hover:bg-olive/10">
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    asChild
+                    className="border-cream bg-transparent text-cream hover:bg-cream/10 hover:text-cream"
+                  >
                     <Link href="/contact">Get In Touch</Link>
                   </Button>
                 </div>
@@ -92,27 +106,27 @@ export default function Home() {
                 animation="fade-in-right"
                 className="relative h-[400px] lg:h-[500px] rounded-lg overflow-hidden"
               >
-                <div className="absolute inset-0 border-2 border-olive/20 rounded-lg -z-10 transform rotate-3"></div>
+                <div className="absolute inset-0 border-2 border-cream/20 rounded-lg -z-10 transform rotate-3"></div>
                 <Image
-                  src="/placeholder.svg?height=500&width=500"
+                  src="/images/ope-portrait-1.png"
                   alt="Opeyemi Ogundeji"
                   fill
-                  className="object-cover rounded-lg"
+                  className="object-cover lg:object-top rounded-lg"
                   priority
                 />
               </AnimationWrapper>
             </div>
           </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-background to-background/50 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-olive/30 pointer-events-none" />
           <div className="absolute bottom-0 left-0 w-full h-12 olive-wave"></div>
         </section>
 
         {/* Values Section */}
-        <section className="py-16 md:py-24 bg-white">
+        <section className="py-16 md:py-24 bg-cream-light">
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold">My Personal Values</h2>
-              <p className="text-muted-foreground max-w-[700px] mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-olive-dark">My Personal Values</h2>
+              <p className="text-olive-dark/80 max-w-[700px] mx-auto">
                 These core values guide my approach to work and life
               </p>
             </AnimationWrapper>
@@ -120,98 +134,100 @@ export default function Home() {
               {["Gratitude", "Resilience", "Respect", "Integrity", "Kindness"].map((value) => (
                 <div
                   key={value}
-                  className="stagger-item bg-white border border-gray-100 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
+                  className="stagger-item bg-white border border-cream rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <h3 className="font-medium">{value}</h3>
+                  <h3 className="font-medium text-olive-dark">{value}</h3>
                 </div>
               ))}
             </StaggeredContainer>
           </div>
         </section>
 
-        {/* Testimonials Section */}
-        <section className="py-16 md:py-24 bg-white">
+        {/* Testimonials Section with Olive Background */}
+        <section className="py-16 md:py-24 bg-olive text-cream relative">
+          <div className="absolute top-0 left-0 w-full h-12 transform rotate-180 olive-wave"></div>
+          <div className="absolute bottom-0 right-0 w-64 h-64 cream-dot-pattern opacity-20"></div>
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
-              <div className="inline-flex items-center gap-2 text-olive">
-                <Star className="h-5 w-5 fill-olive" />
+              <div className="inline-flex items-center gap-2 text-cream">
+                <Star className="h-5 w-5 fill-cream" />
                 <span className="font-medium">Testimonials</span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold">What People Say About My Work</h2>
-              <p className="text-muted-foreground max-w-[700px] mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-cream">What People Say About My Work</h2>
+              <p className="text-cream/90 max-w-[700px] mx-auto">
                 Hear from the individuals and organizations I've had the privilege to work with
               </p>
             </AnimationWrapper>
 
             <div className="grid md:grid-cols-2 gap-8 items-start">
               <AnimationWrapper animation="fade-in-left" className="md:mt-8">
-                <TestimonialCarousel testimonials={testimonials} />
+                <TestimonialCarousel testimonials={testimonials} variant="olive" />
               </AnimationWrapper>
 
               <AnimationWrapper animation="fade-in-right" className="space-y-6">
-                <div className="bg-white border rounded-lg p-6 shadow-sm">
+                <div className="bg-cream/10 backdrop-blur-sm border border-cream/20 rounded-lg p-6 shadow-sm">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="flex -space-x-4">
                       {[...Array(3)].map((_, i) => (
                         <div
                           key={i}
-                          className="h-12 w-12 rounded-full bg-olive/20 flex items-center justify-center border-2 border-white"
+                          className="h-12 w-12 rounded-full bg-cream/20 flex items-center justify-center border-2 border-olive"
                         >
-                          <Users className="h-6 w-6 text-olive" />
+                          <Users className="h-6 w-6 text-cream" />
                         </div>
                       ))}
                     </div>
                     <div>
-                      <h4 className="font-bold">Impact Statistics</h4>
-                      <p className="text-sm text-muted-foreground">From those I've worked with</p>
+                      <h4 className="font-bold text-cream">Impact Statistics</h4>
+                      <p className="text-sm text-cream/80">From those I've worked with</p>
                     </div>
                   </div>
 
                   <div className="grid grid-cols-2 gap-4 mb-4">
-                    <div className="bg-muted p-4 rounded-lg text-center">
-                      <span className="block text-2xl font-bold text-olive">50+</span>
-                      <span className="text-sm text-muted-foreground">Projects Completed</span>
+                    <div className="bg-cream/10 p-4 rounded-lg text-center">
+                      <span className="block text-2xl font-bold text-cream">50+</span>
+                      <span className="text-sm text-cream/80">Projects Completed</span>
                     </div>
-                    <div className="bg-muted p-4 rounded-lg text-center">
-                      <span className="block text-2xl font-bold text-olive">95%</span>
-                      <span className="text-sm text-muted-foreground">Client Satisfaction</span>
+                    <div className="bg-cream/10 p-4 rounded-lg text-center">
+                      <span className="block text-2xl font-bold text-cream">95%</span>
+                      <span className="text-sm text-cream/80">Client Satisfaction</span>
                     </div>
                   </div>
 
                   <div className="space-y-3">
                     <div>
                       <div className="flex justify-between text-sm mb-1">
-                        <span>Leadership Training</span>
-                        <span className="text-olive font-medium">98%</span>
+                        <span className="text-cream">Leadership Training</span>
+                        <span className="text-cream font-medium">98%</span>
                       </div>
-                      <div className="h-2 bg-muted rounded-full overflow-hidden">
-                        <div className="h-full bg-olive rounded-full" style={{ width: "98%" }}></div>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="flex justify-between text-sm mb-1">
-                        <span>Policy Development</span>
-                        <span className="text-olive font-medium">92%</span>
-                      </div>
-                      <div className="h-2 bg-muted rounded-full overflow-hidden">
-                        <div className="h-full bg-olive rounded-full" style={{ width: "92%" }}></div>
+                      <div className="h-2 bg-cream/20 rounded-full overflow-hidden">
+                        <div className="h-full bg-cream/80 rounded-full" style={{ width: "98%" }}></div>
                       </div>
                     </div>
                     <div>
                       <div className="flex justify-between text-sm mb-1">
-                        <span>Community Engagement</span>
-                        <span className="text-olive font-medium">96%</span>
+                        <span className="text-cream">Policy Development</span>
+                        <span className="text-cream font-medium">92%</span>
                       </div>
-                      <div className="h-2 bg-muted rounded-full overflow-hidden">
-                        <div className="h-full bg-olive rounded-full" style={{ width: "96%" }}></div>
+                      <div className="h-2 bg-cream/20 rounded-full overflow-hidden">
+                        <div className="h-full bg-cream/80 rounded-full" style={{ width: "92%" }}></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex justify-between text-sm mb-1">
+                        <span className="text-cream">Community Engagement</span>
+                        <span className="text-cream font-medium">96%</span>
+                      </div>
+                      <div className="h-2 bg-cream/20 rounded-full overflow-hidden">
+                        <div className="h-full bg-cream/80 rounded-full" style={{ width: "96%" }}></div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-primary/10 rounded-lg p-6 text-center">
-                  <h3 className="text-xl font-bold mb-4">Want to share your experience?</h3>
-                  <Button asChild>
+                <div className="bg-cream/10 backdrop-blur-sm border border-cream/20 rounded-lg p-6 text-center">
+                  <h3 className="text-xl font-bold mb-4 text-cream">Want to share your experience?</h3>
+                  <Button asChild className="bg-cream text-olive-dark hover:bg-cream-dark">
                     <Link href="/contact">
                       Leave a Testimonial
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -224,18 +240,18 @@ export default function Home() {
         </section>
 
         {/* Passions Section */}
-        <section className="py-16 md:py-24 bg-muted">
+        <section className="py-16 md:py-24 bg-white">
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold">What I Am Passionate About</h2>
-              <p className="text-muted-foreground max-w-[700px] mx-auto">Areas where I focus my energy and expertise</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-olive-dark">What I Am Passionate About</h2>
+              <p className="text-olive-dark/80 max-w-[700px] mx-auto">Areas where I focus my energy and expertise</p>
             </AnimationWrapper>
             <StaggeredContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" staggerDelay={200}>
-              <div className="stagger-item group bg-white rounded-lg p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all relative overflow-hidden">
+              <div className="stagger-item group feature-card relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-20 h-20 bg-olive/10 rounded-bl-[100px] -z-10"></div>
                 <Globe className="h-10 w-10 text-olive mb-4" />
-                <h3 className="text-xl font-bold mb-2">Driving Climate Action & Sustainability</h3>
-                <p className="text-muted-foreground mb-4">
+                <h3 className="text-xl font-bold mb-2 text-olive-dark">Driving Climate Action & Sustainability</h3>
+                <p className="text-olive-dark/70 mb-4">
                   I work at the intersection of policy, advocacy, and grassroots action to champion climate solutions
                   that are inclusive, impactful, and community-driven.
                 </p>
@@ -243,54 +259,54 @@ export default function Home() {
                   Learn more <ArrowRight className="ml-1 h-4 w-4" />
                 </Link>
               </div>
-              <div className="stagger-item group bg-white rounded-lg p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all">
-                <Users className="h-10 w-10 text-primary mb-4" />
-                <h3 className="text-xl font-bold mb-2">Empowering the Next Generation</h3>
-                <p className="text-muted-foreground mb-4">
+              <div className="stagger-item group feature-card relative overflow-hidden">
+                <Users className="h-10 w-10 text-olive mb-4" />
+                <h3 className="text-xl font-bold mb-2 text-olive-dark">Empowering the Next Generation</h3>
+                <p className="text-olive-dark/70 mb-4">
                   Young people are not just the future - they are the now! Through leadership development,
                   capacity-building, and hands-on mentorship, I support youth in taking bold steps.
                 </p>
-                <Link href="/about" className="inline-flex items-center text-primary hover:underline">
+                <Link href="/about" className="inline-flex items-center text-olive hover:underline">
                   Learn more <ArrowRight className="ml-1 h-4 w-4" />
                 </Link>
               </div>
-              <div className="stagger-item group bg-white rounded-lg p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all">
-                <FileText className="h-10 w-10 text-primary mb-4" />
-                <h3 className="text-xl font-bold mb-2">Shaping Policies that Work for Everyone</h3>
-                <p className="text-muted-foreground mb-4">
+              <div className="stagger-item group feature-card relative overflow-hidden">
+                <FileText className="h-10 w-10 text-olive mb-4" />
+                <h3 className="text-xl font-bold mb-2 text-olive-dark">Shaping Policies that Work for Everyone</h3>
+                <p className="text-olive-dark/70 mb-4">
                   Great policies should be more than just documents - they should work for people. I bridge the gap
                   between policies and the communities they serve.
                 </p>
-                <Link href="/about" className="inline-flex items-center text-primary hover:underline">
+                <Link href="/about" className="inline-flex items-center text-olive hover:underline">
                   Learn more <ArrowRight className="ml-1 h-4 w-4" />
                 </Link>
               </div>
-              <div className="stagger-item group bg-white rounded-lg p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all">
-                <Building className="h-10 w-10 text-primary mb-4" />
-                <h3 className="text-xl font-bold mb-2">Building Sustainable & Inclusive Communities</h3>
-                <p className="text-muted-foreground mb-4">
+              <div className="stagger-item group feature-card relative overflow-hidden">
+                <Building className="h-10 w-10 text-olive mb-4" />
+                <h3 className="text-xl font-bold mb-2 text-olive-dark">Building Sustainable & Inclusive Communities</h3>
+                <p className="text-olive-dark/70 mb-4">
                   I believe strong communities are built on collaboration, inclusion, and action. Whether it's
                   mobilising grassroots movements, or creating local development blueprints.
                 </p>
-                <Link href="/about" className="inline-flex items-center text-primary hover:underline">
+                <Link href="/about" className="inline-flex items-center text-olive hover:underline">
                   Learn more <ArrowRight className="ml-1 h-4 w-4" />
                 </Link>
               </div>
-              <div className="stagger-item group bg-white rounded-lg p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all">
-                <Award className="h-10 w-10 text-primary mb-4" />
-                <h3 className="text-xl font-bold mb-2">Strengthening Nonprofits for Greater Impact</h3>
-                <p className="text-muted-foreground mb-4">
+              <div className="stagger-item group feature-card relative overflow-hidden">
+                <Award className="h-10 w-10 text-olive mb-4" />
+                <h3 className="text-xl font-bold mb-2 text-olive-dark">Strengthening Nonprofits for Greater Impact</h3>
+                <p className="text-olive-dark/70 mb-4">
                   I help mission-driven organisations scale their work, optimise their impact, and navigate challenges.
                   From strategy to impact measurement.
                 </p>
-                <Link href="/about" className="inline-flex items-center text-primary hover:underline">
+                <Link href="/about" className="inline-flex items-center text-olive hover:underline">
                   Learn more <ArrowRight className="ml-1 h-4 w-4" />
                 </Link>
               </div>
-              <div className="stagger-item flex items-center justify-center bg-olive/20 rounded-lg p-6">
+              <div className="stagger-item flex items-center justify-center feature-card-olive">
                 <div className="text-center">
-                  <h3 className="text-xl font-bold mb-4 text-olive-dark">Want to collaborate?</h3>
-                  <Button asChild className="bg-olive hover:bg-olive-dark">
+                  <h3 className="text-xl font-bold mb-4 text-cream">Want to collaborate?</h3>
+                  <Button asChild className="bg-cream text-olive-dark hover:bg-cream-dark">
                     <Link href="/contact">Let's Talk</Link>
                   </Button>
                 </div>
@@ -299,88 +315,88 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Expertise Section */}
-        <section className="py-16 md:py-24 bg-white">
+        {/* Expertise Section with Cream Light Background */}
+        <section className="py-16 md:py-24 bg-cream-light">
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold">My Core Expertise</h2>
-              <p className="text-muted-foreground max-w-[700px] mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-olive-dark">My Core Expertise</h2>
+              <p className="text-olive-dark/80 max-w-[700px] mx-auto">
                 Areas where I've developed specialized knowledge and skills
               </p>
             </AnimationWrapper>
             <StaggeredContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" staggerDelay={200}>
-              <div className="stagger-item bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+              <div className="stagger-item bg-white border border-cream rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
                 <div className="aspect-video relative bg-olive/10">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-primary font-medium">Video Placeholder</span>
+                    <span className="text-olive font-medium">Video Placeholder</span>
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Training & Capacity-Building</h3>
-                  <p className="text-muted-foreground">
+                  <h3 className="text-xl font-bold mb-2 text-olive-dark">Training & Capacity-Building</h3>
+                  <p className="text-olive-dark/70">
                     Designing transformative learning programs that equip individuals and organisations to lead and
                     advocate effectively for positive systemic change.
                   </p>
                 </div>
               </div>
-              <div className="stagger-item bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+              <div className="stagger-item bg-white border border-cream rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Project Management</h3>
-                  <p className="text-muted-foreground mb-4">
+                  <h3 className="text-xl font-bold mb-2 text-olive-dark">Project Management</h3>
+                  <p className="text-olive-dark/70 mb-4">
                     Executing high-impact development projects with strategic planning, stakeholder engagement, and
                     measurable results.
                   </p>
-                  <div className="flex justify-between items-center p-4 bg-muted rounded-lg">
+                  <div className="flex justify-between items-center p-4 bg-cream-light rounded-lg">
                     <div className="text-center">
-                      <span className="block text-2xl font-bold text-primary">50+</span>
-                      <span className="text-sm text-muted-foreground">Projects Led</span>
+                      <span className="block text-2xl font-bold text-olive">50+</span>
+                      <span className="text-sm text-olive-dark/70">Projects Led</span>
                     </div>
                     <div className="text-center">
-                      <span className="block text-2xl font-bold text-primary">10k+</span>
-                      <span className="text-sm text-muted-foreground">Beneficiaries</span>
+                      <span className="block text-2xl font-bold text-olive">10k+</span>
+                      <span className="text-sm text-olive-dark/70">Beneficiaries</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="stagger-item bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+              <div className="stagger-item bg-white border border-cream rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Leadership & Community Building</h3>
-                  <p className="text-muted-foreground mb-4">
+                  <h3 className="text-xl font-bold mb-2 text-olive-dark">Leadership & Community Building</h3>
+                  <p className="text-olive-dark/70 mb-4">
                     Mobilising, inspiring, and fostering collaboration to strengthen communities and drive sustainable
                     change.
                   </p>
-                  <div className="aspect-video relative bg-muted rounded-lg">
+                  <div className="aspect-video relative bg-cream rounded-lg">
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-primary font-medium">Map Visualization</span>
+                      <span className="text-olive font-medium">Map Visualization</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="stagger-item bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+              <div className="stagger-item bg-white border border-cream rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Policy Advocacy & Decentralisation</h3>
-                  <p className="text-muted-foreground mb-4">
+                  <h3 className="text-xl font-bold mb-2 text-olive-dark">Policy Advocacy & Decentralisation</h3>
+                  <p className="text-olive-dark/70 mb-4">
                     Engaging stakeholders, amplifying voices, and shaping inclusive policies that drive real change at
                     all levels.
                   </p>
-                  <div className="p-4 border rounded-lg hover:bg-muted transition-colors cursor-pointer">
-                    <p className="text-sm font-medium">Hover to view case study</p>
+                  <div className="p-4 border border-cream rounded-lg hover:bg-cream transition-colors cursor-pointer">
+                    <p className="text-sm font-medium text-olive-dark">Hover to view case study</p>
                     <div className="hidden group-hover:block mt-2">
-                      <p className="text-sm">
+                      <p className="text-sm text-olive-dark/70">
                         Successfully advocated for youth inclusion in national climate policy formulation.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="stagger-item bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+              <div className="stagger-item bg-white border border-cream rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Research & Policy Analysis</h3>
-                  <p className="text-muted-foreground mb-4">
+                  <h3 className="text-xl font-bold mb-2 text-olive-dark">Research & Policy Analysis</h3>
+                  <p className="text-olive-dark/70 mb-4">
                     Generating data-driven insights to inform policies, advocacy strategies, and development
                     initiatives.
                   </p>
-                  <Button variant="outline" className="w-full">
+                  <Button variant="outline" className="w-full border-olive text-olive hover:bg-olive hover:text-cream">
                     View Research Reports
                   </Button>
                 </div>
@@ -389,23 +405,23 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <ParallaxSection speed={0.05} className="py-16 md:py-24 bg-primary text-primary-foreground">
+        {/* CTA Section with Olive Background */}
+        <ParallaxSection speed={0.05} className="py-16 md:py-24 bg-olive text-cream">
           <div className="container-custom text-center">
             <AnimationWrapper animation="scale-in" className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Make an Impact Together?</h2>
-              <p className="text-xl mb-8 max-w-[700px] mx-auto opacity-90">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-cream">Ready to Make an Impact Together?</h2>
+              <p className="text-xl mb-8 max-w-[700px] mx-auto text-cream/90">
                 Let's collaborate on projects that drive meaningful change and create sustainable impact.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" variant="secondary">
+                <Button asChild size="lg" variant="secondary" className="bg-cream text-olive-dark hover:bg-cream-dark">
                   <Link href="/contact">Get In Touch</Link>
                 </Button>
                 <Button
                   asChild
                   size="lg"
                   variant="outline"
-                  className="bg-transparent border-white/70 hover:bg-white/10"
+                  className="bg-transparent border-cream text-cream hover:bg-cream/10"
                 >
                   <Link href="/services">Explore Services</Link>
                 </Button>
@@ -420,4 +436,3 @@ export default function Home() {
     </div>
   )
 }
-

@@ -16,9 +16,14 @@ interface Testimonial {
 interface TestimonialCarouselProps {
   testimonials: Testimonial[]
   autoplaySpeed?: number
+  variant?: "light" | "olive" // Add variant prop to support different backgrounds
 }
 
-export function TestimonialCarousel({ testimonials, autoplaySpeed = 5000 }: TestimonialCarouselProps) {
+export function TestimonialCarousel({
+  testimonials,
+  autoplaySpeed = 5000,
+  variant = "light", // Default to light variant
+}: TestimonialCarouselProps) {
   const [activeIndex, setActiveIndex] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
   const [isAnimating, setIsAnimating] = useState(false)
@@ -64,14 +69,36 @@ export function TestimonialCarousel({ testimonials, autoplaySpeed = 5000 }: Test
 
   const currentTestimonial = testimonials[activeIndex]
 
+  // Define styles based on variant - updated for dark theme
+  const containerClasses =
+    "relative overflow-hidden rounded-xl bg-darkOlive-lighter border border-darkOlive-light shadow-sm"
+
+  const quoteClasses = "text-lg md:text-xl italic text-lavender/90 mb-8 relative z-10"
+
+  const nameClasses = "font-bold text-lg text-lavender"
+
+  const roleClasses = "text-sm text-lavender/80"
+
+  const iconBgClasses = "h-14 w-14 rounded-full bg-lavender/20 flex items-center justify-center"
+
+  const iconClasses = "h-7 w-7 text-lavender"
+
+  const quoteIconClasses = "h-12 w-12 text-lavender/30"
+
+  const controlsClasses = "flex justify-between items-center p-4 border-t border-darkOlive-light bg-darkOlive/50"
+
+  const indicatorActiveClasses = "w-8 bg-lavender"
+
+  const indicatorInactiveClasses = "w-2 bg-lavender/30"
+
+  const buttonClasses = "h-8 w-8 rounded-full border-lavender/30 hover:bg-lavender/10 hover:border-lavender/50"
+
+  const buttonIconClasses = "h-4 w-4 text-lavender"
+
   return (
-    <div
-      className="relative overflow-hidden rounded-xl bg-white border border-gray-100 shadow-sm"
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
-    >
+    <div className={containerClasses} onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)}>
       <div className="absolute top-4 right-4 z-10">
-        <Quote className="h-12 w-12 text-olive/30" />
+        <Quote className={quoteIconClasses} />
       </div>
 
       <div className="p-8 md:p-10 relative">
@@ -84,12 +111,10 @@ export function TestimonialCarousel({ testimonials, autoplaySpeed = 5000 }: Test
               : "translate-x-0 opacity-100"
           }`}
         >
-          <p className="text-lg md:text-xl italic text-muted-foreground mb-8 relative z-10">
-            "{currentTestimonial.quote}"
-          </p>
+          <p className={quoteClasses}>"{currentTestimonial.quote}"</p>
 
           <div className="flex items-center gap-4">
-            <div className="h-14 w-14 rounded-full bg-olive/20 flex items-center justify-center">
+            <div className={iconBgClasses}>
               {currentTestimonial.avatar ? (
                 <img
                   src={currentTestimonial.avatar || "/placeholder.svg"}
@@ -97,12 +122,12 @@ export function TestimonialCarousel({ testimonials, autoplaySpeed = 5000 }: Test
                   className="h-14 w-14 rounded-full object-cover"
                 />
               ) : (
-                <Users className="h-7 w-7 text-olive" />
+                <Users className={iconClasses} />
               )}
             </div>
             <div>
-              <h4 className="font-bold text-lg">{currentTestimonial.name}</h4>
-              <p className="text-sm text-muted-foreground">
+              <h4 className={nameClasses}>{currentTestimonial.name}</h4>
+              <p className={roleClasses}>
                 {currentTestimonial.role}, {currentTestimonial.organization}
               </p>
             </div>
@@ -110,7 +135,7 @@ export function TestimonialCarousel({ testimonials, autoplaySpeed = 5000 }: Test
         </div>
       </div>
 
-      <div className="flex justify-between items-center p-4 border-t bg-olive/5">
+      <div className={controlsClasses}>
         <div className="flex space-x-2">
           {testimonials.map((_, index) => (
             <button
@@ -120,7 +145,7 @@ export function TestimonialCarousel({ testimonials, autoplaySpeed = 5000 }: Test
                 setActiveIndex(index)
               }}
               className={`h-2 rounded-full transition-all ${
-                index === activeIndex ? "w-8 bg-olive" : "w-2 bg-olive/30"
+                index === activeIndex ? indicatorActiveClasses : indicatorInactiveClasses
               }`}
               aria-label={`Go to testimonial ${index + 1}`}
             />
@@ -132,23 +157,22 @@ export function TestimonialCarousel({ testimonials, autoplaySpeed = 5000 }: Test
             variant="outline"
             size="icon"
             onClick={prevTestimonial}
-            className="h-8 w-8 rounded-full border-olive/30 hover:bg-olive/10 hover:border-olive/50"
+            className={buttonClasses}
             aria-label="Previous testimonial"
           >
-            <ChevronLeft className="h-4 w-4" />
+            <ChevronLeft className={buttonIconClasses} />
           </Button>
           <Button
             variant="outline"
             size="icon"
             onClick={nextTestimonial}
-            className="h-8 w-8 rounded-full border-olive/30 hover:bg-olive/10 hover:border-olive/50"
+            className={buttonClasses}
             aria-label="Next testimonial"
           >
-            <ChevronRight className="h-4 w-4" />
+            <ChevronRight className={buttonIconClasses} />
           </Button>
         </div>
       </div>
     </div>
   )
 }
-

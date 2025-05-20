@@ -4,49 +4,72 @@
 
 @layer base {
   :root {
-    /* Updated color scheme with white background and reduced lavender prominence */
-    --background: 0 0% 100%; /* #FFFFFF - white background */
-    --foreground: 60 20% 10%; /* Dark text for readability */
-    --card: 0 0% 100%; /* White card background */
-    --card-foreground: 60 20% 10%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 60 20% 10%;
-    --primary: 60 100% 25%; /* #7F8000 - olive primary color */
-    --primary-foreground: 0 0% 100%; /* White text on primary */
-    --secondary: 240 50% 87%; /* Medium lavender as secondary color (reduced prominence) */
-    --secondary-foreground: 60 20% 10%;
-    --muted: 240 20% 96%; /* Lighter muted background */
-    --muted-foreground: 60 10% 40%;
-    --accent: 20 60% 48%; /* Terracotta accent color */
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 240 20% 90%;
-    --input: 240 20% 90%;
-    --ring: 60 100% 25%;
+    /* Updated color scheme with #111E00 background and #E7E6FB text */
+    --background: 82 100% 6%; /* #111E00 - dark olive background */
+    --foreground: 240 80% 95%; /* #E7E6FB - lavender text */
+    --card: 82 100% 10%; /* #1A2E00 - slightly lighter background for cards */
+    --card-foreground: 240 80% 95%; /* #E7E6FB - lavender text */
+    --popover: 82 100% 6%; /* #111E00 - dark olive background */
+    --popover-foreground: 240 80% 95%; /* #E7E6FB - lavender text */
+    --primary: 70 55% 36%; /* #7D8A2E - main olive green */
+    --primary-foreground: 240 80% 95%; /* #E7E6FB - lavender text */
+    --secondary: 240 80% 95%; /* #E7E6FB - lavender */
+    --secondary-foreground: 82 100% 6%; /* #111E00 - dark olive */
+    --muted: 82 100% 14%; /* #243800 - slightly lighter for muted areas */
+    --muted-foreground: 240 40% 85%; /* #C5C4E8 - muted lavender text */
+    --accent: 70 40% 44%; /* #9CA63B - lighter olive green */
+    --accent-foreground: 240 80% 95%; /* #E7E6FB - lavender text */
+    --destructive: 0 84.2% 60.2%; /* Keep original destructive */
+    --destructive-foreground: 240 80% 95%; /* #E7E6FB - lavender text */
+    --border: 82 100% 14%; /* #243800 - border color */
+    --input: 82 100% 14%; /* #243800 - input background */
+    --ring: 70 40% 44%; /* #9CA63B - lighter olive green */
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 60 100% 8%;
-    --foreground: 0 0% 100%;
-    --card: 60 100% 12%;
-    --card-foreground: 0 0% 100%;
-    --popover: 60 100% 8%;
-    --popover-foreground: 0 0% 100%;
-    --primary: 60 100% 35%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 240 50% 70%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 60 100% 15%;
-    --muted-foreground: 240 70% 80%;
-    --accent: 20 60% 48%;
-    --accent-foreground: 0 0% 100%;
+    --background: 82 100% 6%; /* #111E00 - dark olive background */
+    --foreground: 240 80% 95%; /* #E7E6FB - lavender text */
+    --card: 82 100% 10%; /* #1A2E00 - slightly lighter background for cards */
+    --card-foreground: 240 80% 95%; /* #E7E6FB - lavender text */
+    --popover: 82 100% 6%; /* #111E00 - dark olive background */
+    --popover-foreground: 240 80% 95%; /* #E7E6FB - lavender text */
+    --primary: 70 55% 36%; /* #7D8A2E - main olive green */
+    --primary-foreground: 240 80% 95%; /* #E7E6FB - lavender text */
+    --secondary: 240 80% 95%; /* #E7E6FB - lavender */
+    --secondary-foreground: 82 100% 6%; /* #111E00 - dark olive */
+    --muted: 82 100% 14%; /* #243800 - slightly lighter for muted areas */
+    --muted-foreground: 240 40% 85%; /* #C5C4E8 - muted lavender text */
+    --accent: 70 40% 44%; /* #9CA63B - lighter olive green */
+    --accent-foreground: 240 80% 95%; /* #E7E6FB - lavender text */
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 60 100% 20%;
-    --input: 60 100% 20%;
-    --ring: 60 100% 35%;
+    --destructive-foreground: 240 80% 95%; /* #E7E6FB - lavender text */
+    --border: 82 100% 14%; /* #243800 - border color */
+    --input: 82 100% 14%; /* #243800 - input background */
+    --ring: 70 40% 44%; /* #9CA63B - lighter olive green */
+  }
+
+  /* Also set light mode to use the same dark theme */
+  .light {
+    --background: 82 100% 6%; /* #111E00 - dark olive background */
+    --foreground: 240 80% 95%; /* #E7E6FB - lavender text */
+    --card: 82 100% 10%; /* #1A2E00 - slightly lighter background for cards */
+    --card-foreground: 240 80% 95%; /* #E7E6FB - lavender text */
+    --popover: 82 100% 6%; /* #111E00 - dark olive background */
+    --popover-foreground: 240 80% 95%; /* #E7E6FB - lavender text */
+    --primary: 70 55% 36%; /* #7D8A2E - main olive green */
+    --primary-foreground: 240 80% 95%; /* #E7E6FB - lavender text */
+    --secondary: 240 80% 95%; /* #E7E6FB - lavender */
+    --secondary-foreground: 82 100% 6%; /* #111E00 - dark olive */
+    --muted: 82 100% 14%; /* #243800 - slightly lighter for muted areas */
+    --muted-foreground: 240 40% 85%; /* #C5C4E8 - muted lavender text */
+    --accent: 70 40% 44%; /* #9CA63B - lighter olive green */
+    --accent-foreground: 240 80% 95%; /* #E7E6FB - lavender text */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 240 80% 95%; /* #E7E6FB - lavender text */
+    --border: 82 100% 14%; /* #243800 - border color */
+    --input: 82 100% 14%; /* #243800 - input background */
+    --ring: 70 40% 44%; /* #9CA63B - lighter olive green */
   }
 }
 
@@ -94,14 +117,19 @@
   @apply container px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20;
 }
 
-/* Decorative elements */
-.lavender-dot-pattern {
-  background-image: radial-gradient(circle, rgba(197, 195, 248, 0.2) 2px, transparent 2px);
+/* Decorative elements - updated for dark theme */
+.cream-dot-pattern {
+  background-image: radial-gradient(circle, rgba(231, 230, 251, 0.15) 2px, transparent 2px);
   background-size: 20px 20px;
 }
 
 .olive-dot-pattern {
-  background-image: radial-gradient(circle, rgba(127, 128, 0, 0.2) 2px, transparent 2px);
+  background-image: radial-gradient(circle, rgba(125, 138, 46, 0.2) 2px, transparent 2px);
+  background-size: 20px 20px;
+}
+
+.lavender-dot-pattern {
+  background-image: radial-gradient(circle, rgba(231, 230, 251, 0.15) 2px, transparent 2px);
   background-size: 20px 20px;
 }
 
@@ -117,7 +145,7 @@
   left: 0;
   width: 100%;
   height: 12px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' opacity='.25' fill='%237F8000'/%3E%3Cpath d='M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z' opacity='.5' fill='%237F8000'/%3E%3Cpath d='M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z' fill='%237F8000' opacity='.75'/%3E%3C/svg%3E")
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' opacity='.25' fill='%237D8A2E'/%3E%3Cpath d='M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z' opacity='.5' fill='%237D8A2E'/%3E%3Cpath d='M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z' fill='%237D8A2E' opacity='.75'/%3E%3C/svg%3E")
     no-repeat;
   background-size: cover;
 }
@@ -241,15 +269,15 @@
   left: 0;
   width: 100%;
   height: 6px;
-  background-color: rgba(127, 128, 0, 0.3); /* olive/30 */
+  background-color: rgba(125, 138, 46, 0.3); /* olive/30 */
   z-index: -10;
   border-radius: 0.25rem;
 }
 
-/* Dark olive footer */
+/* Dark olive footer - updated for dark theme */
 .bg-olive-darker {
-  background-color: #303400;
-  color: white;
+  background-color: #0a1500; /* Even darker than the main background */
+  color: #e7e6fb; /* Lavender text */
 }
 
 .bg-olive-darker h1,
@@ -258,10 +286,176 @@
 .bg-olive-darker h4,
 .bg-olive-darker h5,
 .bg-olive-darker h6 {
-  color: white;
+  color: #e7e6fb; /* Lavender text */
 }
 
 .bg-olive-darker p {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(231, 230, 251, 0.9); /* Slightly transparent lavender */
 }
 
+/* Updated background classes for the new color scheme */
+.bg-olive {
+  background-color: #111e00; /* Now using the main dark background */
+  color: #e7e6fb; /* Lavender text */
+}
+
+.bg-olive-gradient {
+  background: linear-gradient(to right, rgba(17, 30, 0, 0.95), rgba(26, 46, 0, 0.85));
+  color: #e7e6fb;
+}
+
+.bg-olive-light-gradient {
+  background: linear-gradient(to right, rgba(36, 56, 0, 0.2), rgba(36, 56, 0, 0.1));
+  color: #e7e6fb;
+}
+
+.bg-olive-pattern {
+  background-color: rgba(36, 56, 0, 0.5); /* #243800 with opacity */
+  background-image: radial-gradient(rgba(125, 138, 46, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+  color: #e7e6fb;
+}
+
+.bg-cream-pattern {
+  background-color: rgba(26, 46, 0, 0.7); /* #1A2E00 with opacity */
+  background-image: radial-gradient(rgba(231, 230, 251, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  color: #e7e6fb;
+}
+
+.bg-cream-light {
+  background-color: #1a2e00; /* Slightly lighter background */
+  color: #e7e6fb;
+}
+
+.bg-white,
+.bg-background {
+  background-color: #111e00; /* Main dark background */
+  color: #e7e6fb;
+}
+
+.bg-muted {
+  background-color: #1a2e00; /* Slightly lighter background */
+  color: #e7e6fb;
+}
+
+/* Text colors */
+.text-olive-dark,
+.text-foreground,
+.text-muted-foreground {
+  color: #e7e6fb !important; /* Lavender text */
+}
+
+.text-cream {
+  color: #e7e6fb !important; /* Lavender text */
+}
+
+.text-olive {
+  color: #9ca63b !important; /* Lighter olive for better contrast */
+}
+
+/* Enhance contrast for text on dark backgrounds */
+.text-on-dark {
+  color: #e7e6fb; /* Lavender text */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); /* Subtle shadow for better readability */
+}
+
+.text-on-dark-muted {
+  color: rgba(231, 230, 251, 0.8); /* Slightly transparent lavender */
+}
+
+/* Feature card styles - updated for dark theme */
+.feature-card {
+  @apply bg-darkOlive-lighter rounded-lg p-6 border border-darkOlive-light shadow-sm hover:shadow-md transition-all text-lavender;
+}
+
+.feature-card-olive {
+  @apply bg-olive text-lavender rounded-lg p-6 border border-olive-light shadow-sm hover:shadow-md transition-all;
+}
+
+.feature-card-cream {
+  @apply bg-darkOlive-light text-lavender rounded-lg p-6 border border-darkOlive-lighter shadow-sm hover:shadow-md transition-all;
+}
+
+/* Button styles - updated for dark theme */
+.btn-olive {
+  @apply bg-olive text-lavender hover:bg-olive-dark transition-colors;
+}
+
+.btn-cream {
+  @apply bg-lavender text-darkOlive hover:bg-lavender-dark transition-colors;
+}
+
+.btn-outline-olive {
+  @apply border-2 border-olive text-olive hover:bg-olive hover:text-lavender transition-colors;
+}
+
+.btn-outline-cream {
+  @apply border-2 border-lavender text-lavender hover:bg-lavender/20 hover:border-lavender/80 transition-colors;
+}
+
+/* Form elements */
+input,
+textarea,
+select {
+  @apply bg-darkOlive-lighter border-darkOlive-light text-lavender placeholder:text-lavender/50;
+}
+
+/* Override any remaining white backgrounds */
+.bg-white,
+.bg-cream,
+.bg-cream-light {
+  background-color: #111e00 !important;
+  color: #e7e6fb !important;
+}
+
+/* Testimonial section overrides */
+.testimonial-olive {
+  @apply bg-darkOlive text-lavender relative;
+}
+
+.testimonial-olive h2 {
+  @apply text-lavender;
+}
+
+.testimonial-olive p {
+  @apply text-lavender/90;
+}
+
+.testimonial-olive-card {
+  @apply bg-darkOlive-lighter border border-lavender/20 rounded-lg p-6;
+}
+
+.testimonial-olive-card h3,
+.testimonial-olive-card h4 {
+  @apply text-lavender;
+}
+
+.testimonial-olive-card p {
+  @apply text-lavender/80;
+}
+
+/* Ensure all text is the right color */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+li,
+label,
+button {
+  color: #e7e6fb;
+}
+
+/* Special case for links */
+a:not(.btn):not(.button):not([class*="bg-"]) {
+  color: #9ca63b;
+}
+
+a:hover:not(.btn):not(.button):not([class*="bg-"]) {
+  color: #e7e6fb;
+}

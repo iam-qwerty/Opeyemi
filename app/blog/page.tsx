@@ -4,6 +4,8 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Calendar, ArrowRight } from "lucide-react"
+import { AnimationWrapper } from "@/components/animation-wrapper"
+import { ScrollToTop } from "@/components/scroll-to-top"
 
 export default function BlogPage() {
   const blogPosts = [
@@ -73,53 +75,72 @@ export default function BlogPage() {
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-24">
+        <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-olive text-cream relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 cream-dot-pattern opacity-20"></div>
           <div className="container px-4 md:px-6">
-            <div className="max-w-3xl mx-auto text-center space-y-6">
+            <AnimationWrapper animation="fade-in-up" className="max-w-3xl mx-auto text-center space-y-6">
               <h1 className="text-4xl md:text-5xl font-bold tracking-tighter">In The News</h1>
-              <p className="text-xl text-muted-foreground">Articles, features, and insights from my work</p>
-            </div>
+              <p className="text-xl text-cream/90">Articles, features, and insights from my work</p>
+            </AnimationWrapper>
           </div>
+          <div className="absolute bottom-0 left-0 w-full h-12 olive-wave"></div>
         </section>
 
         {/* Featured Article */}
-        <section className="py-8 md:py-12">
+        <section className="py-8 md:py-12 bg-cream-light">
           <div className="container px-4 md:px-6">
-            <div className="grid md:grid-cols-2 gap-8 items-center bg-muted rounded-lg p-6 md:p-8">
-              <div className="relative h-[250px] md:h-[300px] rounded-lg overflow-hidden">
+            <div className="grid md:grid-cols-2 gap-8 items-center feature-card">
+              <AnimationWrapper
+                animation="fade-in-left"
+                className="relative h-[250px] md:h-[300px] rounded-lg overflow-hidden"
+              >
                 <Image
                   src={blogPosts[0].image || "/placeholder.svg"}
                   alt={blogPosts[0].title}
                   fill
                   className="object-cover"
                 />
-              </div>
-              <div className="space-y-4">
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Calendar className="h-4 w-4" />
+                <div className="absolute inset-0 bg-olive/20 mix-blend-multiply"></div>
+                <div className="absolute -bottom-2 -left-2 w-16 h-16 bg-cream/30 rounded-tr-[30px] z-10"></div>
+              </AnimationWrapper>
+              <AnimationWrapper animation="fade-in-right" className="space-y-4">
+                <div className="flex items-center gap-2 text-sm text-olive-dark/70">
+                  <Calendar className="h-4 w-4 text-olive" />
                   <span>{blogPosts[0].date}</span>
                   <span className="px-2">•</span>
                   <span>{blogPosts[0].source}</span>
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold">{blogPosts[0].title}</h2>
-                <p className="text-muted-foreground">{blogPosts[0].excerpt}</p>
-                <Button asChild>
+                <h2 className="text-2xl md:text-3xl font-bold text-olive-dark">{blogPosts[0].title}</h2>
+                <p className="text-olive-dark/70">{blogPosts[0].excerpt}</p>
+                <Button asChild className="bg-olive text-cream hover:bg-olive-dark">
                   <Link href={blogPosts[0].url} target="_blank" rel="noopener noreferrer">
                     Read Full Article
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
-              </div>
+              </AnimationWrapper>
             </div>
           </div>
         </section>
 
         {/* Blog Posts Grid */}
-        <section className="py-16 md:py-24">
+        <section className="py-16 md:py-24 bg-white relative">
+          <div className="absolute top-20 right-0 w-40 h-40 olive-dot-pattern opacity-20"></div>
           <div className="container px-4 md:px-6">
+            <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-olive-dark">Latest Articles</h2>
+              <p className="text-olive-dark/80 max-w-[700px] mx-auto">
+                Stay updated with my latest insights and features
+              </p>
+            </AnimationWrapper>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {blogPosts.slice(1).map((post) => (
-                <div key={post.id} className="group bg-background rounded-lg border shadow-sm overflow-hidden">
+                <AnimationWrapper
+                  key={post.id}
+                  animation="fade-in-up"
+                  delay={post.id * 100}
+                  className="group feature-card overflow-hidden"
+                >
                   <div className="relative h-[200px] overflow-hidden">
                     <Image
                       src={post.image || "/placeholder.svg"}
@@ -127,54 +148,61 @@ export default function BlogPage() {
                       fill
                       className="object-cover transition-transform group-hover:scale-105"
                     />
+                    <div className="absolute inset-0 bg-olive/10 mix-blend-multiply"></div>
                   </div>
                   <div className="p-6 space-y-4">
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <Calendar className="h-4 w-4" />
+                    <div className="flex items-center gap-2 text-sm text-olive-dark/70">
+                      <Calendar className="h-4 w-4 text-olive" />
                       <span>{post.date}</span>
                       <span className="px-2">•</span>
                       <span>{post.source}</span>
                     </div>
-                    <h3 className="text-xl font-bold">{post.title}</h3>
-                    <p className="text-muted-foreground">{post.excerpt}</p>
+                    <h3 className="text-xl font-bold text-olive-dark">{post.title}</h3>
+                    <p className="text-olive-dark/70">{post.excerpt}</p>
                     <Link
                       href={post.url}
-                      className="inline-flex items-center text-primary hover:underline"
+                      className="inline-flex items-center text-olive hover:underline"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       Read more <ArrowRight className="ml-1 h-4 w-4" />
                     </Link>
                   </div>
-                </div>
+                </AnimationWrapper>
               ))}
             </div>
           </div>
         </section>
 
         {/* Newsletter Section */}
-        <section className="py-16 md:py-24 bg-muted">
+        <section className="py-16 md:py-24 bg-olive text-cream relative">
+          <div className="absolute top-0 left-0 w-full h-12 transform rotate-180 olive-wave"></div>
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold">Stay Updated</h2>
-              <p className="text-xl text-muted-foreground">
-                Subscribe to receive updates on my latest work, articles, and speaking engagements
-              </p>
-              <form className="max-w-md mx-auto flex flex-col sm:flex-row gap-2">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                />
-                <Button type="submit">Subscribe</Button>
-              </form>
-              <p className="text-xs text-muted-foreground">I respect your privacy. Unsubscribe at any time.</p>
+              <AnimationWrapper animation="fade-in-up" className="space-y-4">
+                <h2 className="text-3xl md:text-4xl font-bold">Stay Updated</h2>
+                <p className="text-xl text-cream/90">
+                  Subscribe to receive updates on my latest work, articles, and speaking engagements
+                </p>
+                <form className="max-w-md mx-auto flex flex-col sm:flex-row gap-2">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="flex h-10 w-full rounded-md border border-cream/30 bg-cream/10 px-3 py-2 text-sm text-cream ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-cream/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cream focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  />
+                  <Button type="submit" className="bg-cream text-olive-dark hover:bg-cream-dark">
+                    Subscribe
+                  </Button>
+                </form>
+                <p className="text-xs text-cream/70">I respect your privacy. Unsubscribe at any time.</p>
+              </AnimationWrapper>
             </div>
           </div>
         </section>
+
+        <ScrollToTop />
       </main>
       <Footer />
     </div>
   )
 }
-

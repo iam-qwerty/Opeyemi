@@ -33,7 +33,7 @@ export default function ServicesPage() {
       role: "Community Leader",
       organization: "Sustainable Futures",
       quote:
-        "Opeyemi doesn't just talk about community development - they live it. Their approach empowered our community to take ownership of our development process with remarkable results.",
+        "Opeyemi doesn't just talk about community development - she lives it. Their approach empowered our community to take ownership of our development process with remarkable results.",
     },
   ]
 
@@ -42,192 +42,197 @@ export default function ServicesPage() {
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-24">
+        <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-olive text-cream relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 cream-dot-pattern opacity-20"></div>
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="max-w-3xl mx-auto text-center space-y-6">
               <h1 className="text-4xl md:text-5xl font-bold tracking-tighter">How I Can Help You</h1>
-              <p className="text-xl text-muted-foreground">
-                Expert services to drive impact and create sustainable change
-              </p>
+              <p className="text-xl text-cream/90">Expert services to drive impact and create sustainable change</p>
             </AnimationWrapper>
           </div>
+          <div className="absolute bottom-0 left-0 w-full h-12 olive-wave"></div>
         </section>
 
         {/* Services Section */}
-        <section className="py-16 md:py-24">
+        <section className="py-16 md:py-24 bg-cream-light relative">
+          <div className="absolute top-20 left-0 w-32 h-32 olive-dot-pattern opacity-30"></div>
           <div className="container-custom">
             <StaggeredContainer className="grid md:grid-cols-2 gap-12 items-start" staggerDelay={300}>
-              <div className="stagger-item bg-background rounded-lg border shadow-sm overflow-hidden">
-                <div className="aspect-video relative bg-primary/10">
+              <div className="stagger-item feature-card overflow-hidden">
+                <div className="aspect-video relative bg-olive/10">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <BookOpen className="h-16 w-16 text-primary/50" />
+                    <BookOpen className="h-16 w-16 text-olive/50" />
                   </div>
+                  <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-cream/30 rounded-tl-[30px] z-10"></div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Training & Capacity-Building</h3>
-                  <p className="text-muted-foreground mb-4">
+                  <h3 className="text-xl font-bold mb-2 text-olive-dark">Training & Capacity-Building</h3>
+                  <p className="text-olive-dark/70 mb-4">
                     Customised workshops, masterclasses, and training programs for organisations, youth groups, and
                     professionals on advocacy, leadership, and social impact.
                   </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start gap-2">
-                      <div className="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <div className="h-2 w-2 rounded-full bg-primary"></div>
+                      <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span>Leadership development workshops</span>
+                      <span className="text-olive-dark/80">Leadership development workshops</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <div className="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <div className="h-2 w-2 rounded-full bg-primary"></div>
+                      <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span>Advocacy strategy training</span>
+                      <span className="text-olive-dark/80">Advocacy strategy training</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <div className="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <div className="h-2 w-2 rounded-full bg-primary"></div>
+                      <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span>Climate action capacity building</span>
+                      <span className="text-olive-dark/80">Climate action capacity building</span>
                     </li>
                   </ul>
-                  <Button asChild className="w-full">
+                  <Button asChild className="w-full bg-olive text-cream hover:bg-olive-dark">
                     <Link href="/contact">Book a Session</Link>
                   </Button>
                 </div>
               </div>
 
-              <div className="stagger-item bg-background rounded-lg border shadow-sm overflow-hidden">
-                <div className="aspect-video relative bg-primary/10">
+              <div className="stagger-item feature-card overflow-hidden">
+                <div className="aspect-video relative bg-olive/10">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <Megaphone className="h-16 w-16 text-primary/50" />
+                    <Megaphone className="h-16 w-16 text-olive/50" />
                   </div>
+                  <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-cream/30 rounded-tl-[30px] z-10"></div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Speaking Engagements</h3>
-                  <p className="text-muted-foreground mb-4">
+                  <h3 className="text-xl font-bold mb-2 text-olive-dark">Speaking Engagements</h3>
+                  <p className="text-olive-dark/70 mb-4">
                     Delivering keynotes, panel discussions, and expert facilitation on climate action/environmental
                     sustainability, youth development, and inclusive community development.
                   </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start gap-2">
-                      <div className="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <div className="h-2 w-2 rounded-full bg-primary"></div>
+                      <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span>Conference keynotes</span>
+                      <span className="text-olive-dark/80">Conference keynotes</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <div className="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <div className="h-2 w-2 rounded-full bg-primary"></div>
+                      <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span>Panel moderation</span>
+                      <span className="text-olive-dark/80">Panel moderation</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <div className="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <div className="h-2 w-2 rounded-full bg-primary"></div>
+                      <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span>Workshop facilitation</span>
+                      <span className="text-olive-dark/80">Workshop facilitation</span>
                     </li>
                   </ul>
-                  <Button asChild className="w-full">
+                  <Button asChild className="w-full bg-olive text-cream hover:bg-olive-dark">
                     <Link href="/contact">Book Me for Your Next Event</Link>
                   </Button>
                 </div>
               </div>
 
-              <div className="stagger-item bg-background rounded-lg border shadow-sm overflow-hidden">
-                <div className="aspect-video relative bg-primary/10">
+              <div className="stagger-item feature-card overflow-hidden">
+                <div className="aspect-video relative bg-olive/10">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <BarChart className="h-16 w-16 text-primary/50" />
+                    <BarChart className="h-16 w-16 text-olive/50" />
                   </div>
+                  <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-cream/30 rounded-tl-[30px] z-10"></div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Project Strategy & Management</h3>
-                  <p className="text-muted-foreground mb-4">
+                  <h3 className="text-xl font-bold mb-2 text-olive-dark">Project Strategy & Management</h3>
+                  <p className="text-olive-dark/70 mb-4">
                     Providing expert guidance on designing, implementing, and scaling development projects for long-term
                     impact.
                   </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start gap-2">
-                      <div className="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <div className="h-2 w-2 rounded-full bg-primary"></div>
+                      <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span>Project design and planning</span>
+                      <span className="text-olive-dark/80">Project design and planning</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <div className="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <div className="h-2 w-2 rounded-full bg-primary"></div>
+                      <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span>Implementation oversight</span>
+                      <span className="text-olive-dark/80">Implementation oversight</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <div className="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <div className="h-2 w-2 rounded-full bg-primary"></div>
+                      <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span>Impact measurement and evaluation</span>
+                      <span className="text-olive-dark/80">Impact measurement and evaluation</span>
                     </li>
                   </ul>
-                  <div className="bg-muted p-4 rounded-lg mb-6">
-                    <h4 className="font-medium mb-2">Recent Projects Timeline</h4>
+                  <div className="bg-cream-light p-4 rounded-lg mb-6">
+                    <h4 className="font-medium mb-2 text-olive-dark">Recent Projects Timeline</h4>
                     <div className="space-y-2">
                       <div className="flex justify-between text-sm">
-                        <span>Climate Resilience Initiative</span>
-                        <span className="text-muted-foreground">2024</span>
+                        <span className="text-olive-dark">Climate Resilience Initiative</span>
+                        <span className="text-olive-dark/70">2024</span>
                       </div>
                       <div className="flex justify-between text-sm">
-                        <span>Youth Leadership Academy</span>
-                        <span className="text-muted-foreground">2023</span>
+                        <span className="text-olive-dark">Youth Leadership Academy</span>
+                        <span className="text-olive-dark/70">2023</span>
                       </div>
                       <div className="flex justify-between text-sm">
-                        <span>Community Development Program</span>
-                        <span className="text-muted-foreground">2022</span>
+                        <span className="text-olive-dark">Community Development Program</span>
+                        <span className="text-olive-dark/70">2022</span>
                       </div>
                     </div>
                   </div>
-                  <Button asChild className="w-full">
+                  <Button asChild className="w-full bg-olive text-cream hover:bg-olive-dark">
                     <Link href="/contact">Discuss Your Project</Link>
                   </Button>
                 </div>
               </div>
 
-              <div className="stagger-item bg-background rounded-lg border shadow-sm overflow-hidden">
-                <div className="aspect-video relative bg-primary/10">
+              <div className="stagger-item feature-card overflow-hidden">
+                <div className="aspect-video relative bg-olive/10">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <FileText className="h-16 w-16 text-primary/50" />
+                    <FileText className="h-16 w-16 text-olive/50" />
                   </div>
+                  <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-cream/30 rounded-tl-[30px] z-10"></div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Policy, Advocacy & Nonprofit Consulting</h3>
-                  <p className="text-muted-foreground mb-4">
+                  <h3 className="text-xl font-bold mb-2 text-olive-dark">Policy, Advocacy & Nonprofit Consulting</h3>
+                  <p className="text-olive-dark/70 mb-4">
                     Empowering organisations and governments to design inclusive policies, foster meaningful stakeholder
                     engagement, and amplify community voices - turning advocacy into real, lasting impact.
                   </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start gap-2">
-                      <div className="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <div className="h-2 w-2 rounded-full bg-primary"></div>
+                      <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span>Policy development and analysis</span>
+                      <span className="text-olive-dark/80">Policy development and analysis</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <div className="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <div className="h-2 w-2 rounded-full bg-primary"></div>
+                      <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span>Advocacy campaign strategy</span>
+                      <span className="text-olive-dark/80">Advocacy campaign strategy</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <div className="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <div className="h-2 w-2 rounded-full bg-primary"></div>
+                      <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span>Organizational development</span>
+                      <span className="text-olive-dark/80">Organizational development</span>
                     </li>
                   </ul>
-                  <div className="bg-muted p-4 rounded-lg mb-6">
-                    <h4 className="font-medium mb-2">Case Study: Policy Impact</h4>
-                    <p className="text-sm text-muted-foreground">
+                  <div className="bg-cream-light p-4 rounded-lg mb-6">
+                    <h4 className="font-medium mb-2 text-olive-dark">Case Study: Policy Impact</h4>
+                    <p className="text-sm text-olive-dark/70">
                       Successfully advocated for the inclusion of youth representatives in national climate policy
                       formulation, resulting in more inclusive and effective climate action plans.
                     </p>
                   </div>
-                  <Button asChild className="w-full">
+                  <Button asChild className="w-full bg-olive text-cream hover:bg-olive-dark">
                     <Link href="/contact">Schedule a Consultation</Link>
                   </Button>
                 </div>
@@ -237,29 +242,32 @@ export default function ServicesPage() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-16 md:py-24 bg-muted">
+        <section className="py-16 md:py-24 bg-olive text-cream relative">
+          <div className="absolute top-0 left-0 w-full h-12 transform rotate-180 olive-wave"></div>
+          <div className="absolute bottom-10 right-0 w-40 h-40 cream-dot-pattern opacity-20"></div>
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold">What People Say</h2>
-              <p className="text-muted-foreground max-w-[700px] mx-auto">Feedback from those I've worked with</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-cream">What People Say</h2>
+              <p className="text-cream/90 max-w-[700px] mx-auto">Feedback from those I've worked with</p>
             </AnimationWrapper>
             <div className="max-w-3xl mx-auto">
               <AnimationWrapper animation="scale-in">
-                <TestimonialCarousel testimonials={testimonials} />
+                <TestimonialCarousel testimonials={testimonials} variant="olive" />
               </AnimationWrapper>
             </div>
           </div>
         </section>
 
         {/* CTA Section */}
-        <ParallaxSection speed={0.05} className="py-16 md:py-24">
+        <ParallaxSection speed={0.05} className="py-16 md:py-24 bg-olive text-cream relative">
+          <div className="absolute top-0 left-0 w-full h-12 transform rotate-180 olive-wave" />
           <div className="container-custom">
             <AnimationWrapper animation="scale-in" className="max-w-3xl mx-auto text-center space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold">Ready to Work Together?</h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-xl text-cream/90">
                 Let's collaborate to create meaningful impact and sustainable change
               </p>
-              <Button asChild size="lg">
+              <Button asChild size="lg" className="bg-cream text-olive-dark hover:bg-cream-dark">
                 <Link href="/contact">Get In Touch</Link>
               </Button>
             </AnimationWrapper>
@@ -272,4 +280,3 @@ export default function ServicesPage() {
     </div>
   )
 }
-

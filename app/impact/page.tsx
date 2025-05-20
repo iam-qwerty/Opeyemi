@@ -15,15 +15,12 @@ export default function ImpactPage() {
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-24 relative bg-white">
-          <div className="absolute top-0 right-0 w-64 h-64 olive-dot-pattern opacity-20 -z-10"></div>
-          <div className="container px-4 md:px-6">
-            <div className="max-w-3xl mx-auto text-center space-y-6">
-              <h1 className="text-4xl md:text-5xl font-bold tracking-tighter">
-                <span className="text-olive">Impact</span> Stories
-              </h1>
-              <p className="text-xl text-muted-foreground">Real stories of transformation and change</p>
-            </div>
+        <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-olive text-cream overflow-hidden">
+          <div className="container-custom">
+            <AnimationWrapper animation="fade-in-up" className="max-w-3xl mx-auto text-center space-y-6">
+              <h1 className="text-4xl md:text-5xl font-bold tracking-tighter">Impact</h1>
+              <p className="text-xl text-cream">Real stories of transformation and change</p>
+            </AnimationWrapper>
           </div>
         </section>
 
@@ -248,12 +245,13 @@ export default function ImpactPage() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-16 md:py-24 relative bg-white">
-          <div className="absolute bottom-0 left-0 w-64 h-64 olive-dot-pattern opacity-20 -z-10"></div>
+        <section className="py-16 md:py-24 bg-olive text-cream relative">
+          <div className="absolute top-0 left-0 w-full h-12 transform rotate-180 olive-wave"></div>
+          <div className="absolute bottom-0 left-0 w-64 h-64 cream-dot-pattern opacity-20 -z-10"></div>
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold">Voices of Impact</h2>
-              <p className="text-muted-foreground max-w-[700px] mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-cream">Voices of Impact</h2>
+              <p className="text-cream/90 max-w-[700px] mx-auto">
                 Stories from those whose lives have been transformed
               </p>
             </AnimationWrapper>
@@ -264,6 +262,7 @@ export default function ImpactPage() {
                 organization="Coastal Village"
                 quote="The climate resilience training completely transformed how our community approaches environmental challenges. We now have the tools and knowledge to protect our livelihoods against climate impacts."
                 delay={100}
+                variant="olive"
               />
               <TestimonialCard
                 name="David Mensah"
@@ -271,6 +270,7 @@ export default function ImpactPage() {
                 organization="Urban Community"
                 quote="Being part of the Youth Leadership Academy gave me the confidence and skills to start my own community development initiative. Today, we're addressing local challenges that were previously ignored."
                 delay={200}
+                variant="olive"
               />
               <TestimonialCard
                 name="Grace Afolabi"
@@ -278,13 +278,14 @@ export default function ImpactPage() {
                 organization="Health Advocacy Network"
                 quote="The policy advocacy training equipped our organization with strategies that helped us successfully advocate for inclusive healthcare policies. We now have a seat at the table where decisions are made."
                 delay={300}
+                variant="olive"
               />
             </div>
           </div>
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+        <section className="py-16 md:py-24 bg-primary text-cream">
           <div className="container-custom text-center">
             <AnimationWrapper animation="scale-in" className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Create Impact Together?</h2>
@@ -292,7 +293,7 @@ export default function ImpactPage() {
                 Let's collaborate on projects that drive meaningful change and create sustainable impact.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" variant="secondary">
+                <Button asChild size="lg" className="bg-cream text-olive hover:text-cream border-white/70">
                   <Link href="/contact">Get In Touch</Link>
                 </Button>
                 <Button
@@ -314,4 +315,3 @@ export default function ImpactPage() {
     </div>
   )
 }
-
