@@ -71,11 +71,11 @@ export default function BlogPage() {
   ]
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-darkOlive-dark">
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-olive text-cream relative overflow-hidden">
+        <section className="pt-32 pb-16 md:pt-40 md:pb-24 text-cream relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 cream-dot-pattern opacity-20"></div>
           <div className="container px-4 md:px-6">
             <AnimationWrapper animation="fade-in-up" className="max-w-3xl mx-auto text-center space-y-6">
@@ -124,7 +124,7 @@ export default function BlogPage() {
         </section>
 
         {/* Blog Posts Grid */}
-        <section className="py-16 md:py-24 bg-white relative">
+        <section className="py-16 md:py-24 relative">
           <div className="absolute top-20 right-0 w-40 h-40 olive-dot-pattern opacity-20"></div>
           <div className="container px-4 md:px-6">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
@@ -175,7 +175,7 @@ export default function BlogPage() {
         </section>
 
         {/* Newsletter Section */}
-        <section className="py-16 md:py-24 bg-olive text-cream relative">
+        <section className="py-16 md:py-24 text-cream relative">
           <div className="absolute top-0 left-0 w-full h-12 transform rotate-180 olive-wave"></div>
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center space-y-6">
@@ -190,7 +190,7 @@ export default function BlogPage() {
                     placeholder="Enter your email"
                     className="flex h-10 w-full rounded-md border border-cream/30 bg-cream/10 px-3 py-2 text-sm text-cream ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-cream/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cream focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   />
-                  <Button type="submit" className="bg-cream text-olive-dark hover:bg-cream-dark">
+                  <Button type="submit" className="text-olive-dark hover:bg-olive-dark">
                     Subscribe
                   </Button>
                 </form>

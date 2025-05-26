@@ -11,21 +11,22 @@ import { ScrollToTop } from "@/components/scroll-to-top"
 
 export default function ImpactPage() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-darkOlive-dark">
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-olive text-cream overflow-hidden">
+        <section className="pt-32 pb-16 md:pt-40 md:pb-24 text-cream overflow-hidden">
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="max-w-3xl mx-auto text-center space-y-6">
               <h1 className="text-4xl md:text-5xl font-bold tracking-tighter">Impact</h1>
               <p className="text-xl text-cream">Real stories of transformation and change</p>
             </AnimationWrapper>
           </div>
+          <div className="absolute bottom-0 left-0 w-full h-12 olive-wave"></div>
         </section>
 
         {/* Impact Stories Section */}
-        <section className="py-16 md:py-24 bg-white">
+        <section className="py-16 md:py-24">
           <div className="container-custom px-4 md:px-6">
             <div className="space-y-16">
               <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -205,11 +206,11 @@ export default function ImpactPage() {
         </section>
 
         {/* Impact Metrics Section */}
-        <section className="py-16 md:py-24 bg-muted">
+        <section className="py-16 md:py-24">
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
               <h2 className="text-3xl md:text-4xl font-bold">Impact by the Numbers</h2>
-              <p className="text-muted-foreground max-w-[700px] mx-auto">Measuring the change we've created together</p>
+              <p className="text-muted-foreground max-w-[700px] mx-auto">Measuring the change we&apos;ve created together</p>
             </AnimationWrapper>
             <StaggeredContainer className="grid grid-cols-2 md:grid-cols-4 gap-8" staggerDelay={150}>
               <div className="stagger-item bg-white border border-gray-100 rounded-lg p-6 text-center shadow-sm">
@@ -245,7 +246,7 @@ export default function ImpactPage() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-16 md:py-24 bg-olive text-cream relative">
+        <section className="py-16 md:py-24 text-cream relative">
           <div className="absolute top-0 left-0 w-full h-12 transform rotate-180 olive-wave"></div>
           <div className="absolute bottom-0 left-0 w-64 h-64 cream-dot-pattern opacity-20 -z-10"></div>
           <div className="container-custom">
@@ -268,7 +269,7 @@ export default function ImpactPage() {
                 name="David Mensah"
                 role="Youth Leader"
                 organization="Urban Community"
-                quote="Being part of the Youth Leadership Academy gave me the confidence and skills to start my own community development initiative. Today, we're addressing local challenges that were previously ignored."
+                quote="Being part of the Youth Leadership Academy gave me the confidence and skills to start my own community development initiative. Today, we&apos;re addressing local challenges that were previously ignored."
                 delay={200}
                 variant="olive"
               />
@@ -285,15 +286,15 @@ export default function ImpactPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-primary text-cream">
+        <section className="py-16 md:py-24 text-cream">
           <div className="container-custom text-center">
             <AnimationWrapper animation="scale-in" className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Create Impact Together?</h2>
               <p className="text-xl mb-8 max-w-[700px] mx-auto opacity-90">
-                Let's collaborate on projects that drive meaningful change and create sustainable impact.
+                Let&apos;s collaborate on projects that drive meaningful change and create sustainable impact.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="bg-cream text-olive hover:text-cream border-white/70">
+                <Button asChild size="lg">
                   <Link href="/contact">Get In Touch</Link>
                 </Button>
                 <Button

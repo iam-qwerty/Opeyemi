@@ -18,7 +18,7 @@ export default function Home() {
       role: "Executive Director",
       organization: "Climate Action Network",
       quote:
-        "Opeyemi's expertise in climate policy and community engagement transformed our approach to advocacy. Their ability to connect policy with real community needs is unmatched.",
+        "Opeyemi&apos;s expertise in climate policy and community engagement transformed our approach to advocacy. Their ability to connect policy with real community needs is unmatched.",
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ export default function Home() {
       role: "Community Leader",
       organization: "Sustainable Futures",
       quote:
-        "Opeyemi doesn't just talk about community development - they live it. Their approach empowered our community to take ownership of our development process with remarkable results.",
+        "Opeyemi doesn&apos;t just talk about community development - they live it. Their approach empowered our community to take ownership of our development process with remarkable results.",
     },
     {
       id: 4,
@@ -42,7 +42,7 @@ export default function Home() {
       role: "Youth Leader",
       organization: "Urban Community",
       quote:
-        "Being part of the Youth Leadership Academy gave me the confidence and skills to start my own community development initiative. Today, we're addressing local challenges that were previously ignored.",
+        "Being part of the Youth Leadership Academy gave me the confidence and skills to start my own community development initiative. Today, we&apos;re addressing local challenges that were previously ignored.",
     },
     {
       id: 5,
@@ -55,11 +55,11 @@ export default function Home() {
   ]
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-darkOlive-dark">
       <Navbar />
       <main className="flex-1">
         {/* Hero Section with Olive Background */}
-        <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-[#111E00] text-cream">
+        <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-darkOlive-dark text-cream">
           <div className="container-custom relative z-10">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <AnimationWrapper animation="fade-in-left" className="space-y-6">
@@ -74,18 +74,17 @@ export default function Home() {
                   to My World
                 </h1>
                 <p className="text-xl text-cream/90 max-w-[600px]">
-                  Hey there, It's great to have you here! I'm Opeyemi Ogundeji.
+                  Hey there, It&apos;s great to have you here! I&apos;m Opeyemi Ogundeji.
                 </p>
-                <p className="text-lg text-cream/80 max-w-[600px]">
-                  For over five years, I've been at the forefront of empowering marginalised groups, driving climate
+                <p className="text-lg text-lavender/80 max-w-[600px]">
+                  For over five years, I&apos;ve been at the forefront of empowering marginalised groups, driving climate
                   action, decentralising policies, and building sustainable communities through inclusive development.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button
                     asChild
                     size="lg"
-                    variant="secondary"
-                    className="bg-cream text-olive-dark hover:bg-cream-dark"
+                    variant="default"
                   >
                     <Link href="/about">
                       Read More About Me
@@ -96,7 +95,7 @@ export default function Home() {
                     variant="outline"
                     size="lg"
                     asChild
-                    className="border-cream bg-transparent text-cream hover:bg-cream/10 hover:text-cream"
+                    className="border-lavender bg-transparent text-lavender hover:bg-lavender/10 hover:text-lavender"
                   >
                     <Link href="/contact">Get In Touch</Link>
                   </Button>
@@ -117,16 +116,16 @@ export default function Home() {
               </AnimationWrapper>
             </div>
           </div>
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-olive/30 pointer-events-none" />
+          {/* <div className="absolute inset-0 bg-darkOlive-dark to-olive/30 pointer-events-none" /> */}
           <div className="absolute bottom-0 left-0 w-full h-12 olive-wave"></div>
         </section>
 
         {/* Values Section */}
-        <section className="py-16 md:py-24 bg-cream-light">
+        <section className="py-16 md:py-24 ">
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-olive-dark">My Personal Values</h2>
-              <p className="text-olive-dark/80 max-w-[700px] mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-lavender">My Personal Values</h2>
+              <p className="text-lavender/65 max-w-[700px] mx-auto">
                 These core values guide my approach to work and life
               </p>
             </AnimationWrapper>
@@ -134,7 +133,7 @@ export default function Home() {
               {["Gratitude", "Resilience", "Respect", "Integrity", "Kindness"].map((value) => (
                 <div
                   key={value}
-                  className="stagger-item bg-white border border-cream rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
+                  className="stagger-item bg-cream/10 backdrop-blur-sm rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
                 >
                   <h3 className="font-medium text-olive-dark">{value}</h3>
                 </div>
@@ -144,7 +143,7 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section with Olive Background */}
-        <section className="py-16 md:py-24 bg-olive text-cream relative">
+        <section className="py-16 md:py-24 text-cream relative">
           <div className="absolute top-0 left-0 w-full h-12 transform rotate-180 olive-wave"></div>
           <div className="absolute bottom-0 right-0 w-64 h-64 cream-dot-pattern opacity-20"></div>
           <div className="container-custom">
@@ -155,7 +154,7 @@ export default function Home() {
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-cream">What People Say About My Work</h2>
               <p className="text-cream/90 max-w-[700px] mx-auto">
-                Hear from the individuals and organizations I've had the privilege to work with
+                Hear from the individuals and organizations I&apos;ve had the privilege to work with
               </p>
             </AnimationWrapper>
 
@@ -179,7 +178,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-bold text-cream">Impact Statistics</h4>
-                      <p className="text-sm text-cream/80">From those I've worked with</p>
+                      <p className="text-sm text-cream/80">From those I&apos;ve worked with</p>
                     </div>
                   </div>
 
@@ -240,18 +239,18 @@ export default function Home() {
         </section>
 
         {/* Passions Section */}
-        <section className="py-16 md:py-24 bg-white">
+        <section className="py-16 md:py-24 bg-darkOlive-dark">
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-olive-dark">What I Am Passionate About</h2>
-              <p className="text-olive-dark/80 max-w-[700px] mx-auto">Areas where I focus my energy and expertise</p>
+              <p className="text-lavender/65 max-w-[700px] mx-auto">Areas where I focus my energy and expertise</p>
             </AnimationWrapper>
             <StaggeredContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" staggerDelay={200}>
               <div className="stagger-item group feature-card relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-20 h-20 bg-olive/10 rounded-bl-[100px] -z-10"></div>
                 <Globe className="h-10 w-10 text-olive mb-4" />
                 <h3 className="text-xl font-bold mb-2 text-olive-dark">Driving Climate Action & Sustainability</h3>
-                <p className="text-olive-dark/70 mb-4">
+                <p className="text-lavender/70 mb-4">
                   I work at the intersection of policy, advocacy, and grassroots action to champion climate solutions
                   that are inclusive, impactful, and community-driven.
                 </p>
@@ -262,7 +261,7 @@ export default function Home() {
               <div className="stagger-item group feature-card relative overflow-hidden">
                 <Users className="h-10 w-10 text-olive mb-4" />
                 <h3 className="text-xl font-bold mb-2 text-olive-dark">Empowering the Next Generation</h3>
-                <p className="text-olive-dark/70 mb-4">
+                <p className="text-lavender/70 mb-4">
                   Young people are not just the future - they are the now! Through leadership development,
                   capacity-building, and hands-on mentorship, I support youth in taking bold steps.
                 </p>
@@ -273,7 +272,7 @@ export default function Home() {
               <div className="stagger-item group feature-card relative overflow-hidden">
                 <FileText className="h-10 w-10 text-olive mb-4" />
                 <h3 className="text-xl font-bold mb-2 text-olive-dark">Shaping Policies that Work for Everyone</h3>
-                <p className="text-olive-dark/70 mb-4">
+                <p className="text-lavender/70 mb-4">
                   Great policies should be more than just documents - they should work for people. I bridge the gap
                   between policies and the communities they serve.
                 </p>
@@ -284,8 +283,8 @@ export default function Home() {
               <div className="stagger-item group feature-card relative overflow-hidden">
                 <Building className="h-10 w-10 text-olive mb-4" />
                 <h3 className="text-xl font-bold mb-2 text-olive-dark">Building Sustainable & Inclusive Communities</h3>
-                <p className="text-olive-dark/70 mb-4">
-                  I believe strong communities are built on collaboration, inclusion, and action. Whether it's
+                <p className="text-lavender/70 mb-4">
+                  I believe strong communities are built on collaboration, inclusion, and action. Whether it&apos;s
                   mobilising grassroots movements, or creating local development blueprints.
                 </p>
                 <Link href="/about" className="inline-flex items-center text-olive hover:underline">
@@ -295,7 +294,7 @@ export default function Home() {
               <div className="stagger-item group feature-card relative overflow-hidden">
                 <Award className="h-10 w-10 text-olive mb-4" />
                 <h3 className="text-xl font-bold mb-2 text-olive-dark">Strengthening Nonprofits for Greater Impact</h3>
-                <p className="text-olive-dark/70 mb-4">
+                <p className="text-lavender/70 mb-4">
                   I help mission-driven organisations scale their work, optimise their impact, and navigate challenges.
                   From strategy to impact measurement.
                 </p>
@@ -307,7 +306,7 @@ export default function Home() {
                 <div className="text-center">
                   <h3 className="text-xl font-bold mb-4 text-cream">Want to collaborate?</h3>
                   <Button asChild className="bg-cream text-olive-dark hover:bg-cream-dark">
-                    <Link href="/contact">Let's Talk</Link>
+                    <Link href="/contact">Let&apos;s Talk</Link>
                   </Button>
                 </div>
               </div>
@@ -316,16 +315,16 @@ export default function Home() {
         </section>
 
         {/* Expertise Section with Cream Light Background */}
-        <section className="py-16 md:py-24 bg-cream-light">
+        <section className="py-16 md:py-24">
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-olive-dark">My Core Expertise</h2>
-              <p className="text-olive-dark/80 max-w-[700px] mx-auto">
-                Areas where I've developed specialized knowledge and skills
+              <p className="text-lavender/70 max-w-[700px] mx-auto">
+                Areas where I&apos;ve developed specialized knowledge and skills
               </p>
             </AnimationWrapper>
             <StaggeredContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" staggerDelay={200}>
-              <div className="stagger-item bg-white border border-cream rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+              <div className="stagger-item bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
                 <div className="aspect-video relative bg-olive/10">
                   <div className="absolute inset-0 flex items-center justify-center">
                     <span className="text-olive font-medium">Video Placeholder</span>
@@ -333,35 +332,35 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-olive-dark">Training & Capacity-Building</h3>
-                  <p className="text-olive-dark/70">
+                  <p className="text-lavender/70">
                     Designing transformative learning programs that equip individuals and organisations to lead and
                     advocate effectively for positive systemic change.
                   </p>
                 </div>
               </div>
-              <div className="stagger-item bg-white border border-cream rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+              <div className="stagger-item bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-olive-dark">Project Management</h3>
-                  <p className="text-olive-dark/70 mb-4">
+                  <p className="text-lavender/70 mb-4">
                     Executing high-impact development projects with strategic planning, stakeholder engagement, and
                     measurable results.
                   </p>
                   <div className="flex justify-between items-center p-4 bg-cream-light rounded-lg">
                     <div className="text-center">
-                      <span className="block text-2xl font-bold text-olive">50+</span>
-                      <span className="text-sm text-olive-dark/70">Projects Led</span>
+                      <span className="block text-2xl font-bold text-lavender">50+</span>
+                      <span className="text-sm text-lavender/70">Projects Led</span>
                     </div>
                     <div className="text-center">
-                      <span className="block text-2xl font-bold text-olive">10k+</span>
-                      <span className="text-sm text-olive-dark/70">Beneficiaries</span>
+                      <span className="block text-2xl font-bold text-lavender">10k+</span>
+                      <span className="text-sm text-lavender/70">Beneficiaries</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="stagger-item bg-white border border-cream rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+              <div className="stagger-item bg-olive hover:border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-olive-dark">Leadership & Community Building</h3>
-                  <p className="text-olive-dark/70 mb-4">
+                  <p className="text-lavender/70 mb-4">
                     Mobilising, inspiring, and fostering collaboration to strengthen communities and drive sustainable
                     change.
                   </p>
@@ -372,27 +371,27 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="stagger-item bg-white border border-cream rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+              <div className="stagger-item bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-olive-dark">Policy Advocacy & Decentralisation</h3>
-                  <p className="text-olive-dark/70 mb-4">
+                  <p className="text-lavender/70 mb-4">
                     Engaging stakeholders, amplifying voices, and shaping inclusive policies that drive real change at
                     all levels.
                   </p>
                   <div className="p-4 border border-cream rounded-lg hover:bg-cream transition-colors cursor-pointer">
                     <p className="text-sm font-medium text-olive-dark">Hover to view case study</p>
                     <div className="hidden group-hover:block mt-2">
-                      <p className="text-sm text-olive-dark/70">
+                      <p className="text-sm text-lavender/70">
                         Successfully advocated for youth inclusion in national climate policy formulation.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="stagger-item bg-white border border-cream rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+              <div className="stagger-item bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-olive-dark">Research & Policy Analysis</h3>
-                  <p className="text-olive-dark/70 mb-4">
+                  <p className="text-lavender/70 mb-4">
                     Generating data-driven insights to inform policies, advocacy strategies, and development
                     initiatives.
                   </p>
@@ -405,23 +404,23 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CTA Section with Olive Background */}
-        <ParallaxSection speed={0.05} className="py-16 md:py-24 bg-olive text-cream">
+        {/* CTA Section */}
+        <ParallaxSection speed={0.05} className="py-16 md:py-24 bg-darkOlive-dark text-cream">
           <div className="container-custom text-center">
             <AnimationWrapper animation="scale-in" className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-cream">Ready to Make an Impact Together?</h2>
               <p className="text-xl mb-8 max-w-[700px] mx-auto text-cream/90">
-                Let's collaborate on projects that drive meaningful change and create sustainable impact.
+                Let&apos;s collaborate on projects that drive meaningful change and create sustainable impact.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" variant="secondary" className="bg-cream text-olive-dark hover:bg-cream-dark">
+                <Button asChild size="lg" className="">
                   <Link href="/contact">Get In Touch</Link>
                 </Button>
                 <Button
                   asChild
                   size="lg"
                   variant="outline"
-                  className="bg-transparent border-cream text-cream hover:bg-cream/10"
+                  className="text-cream"
                 >
                   <Link href="/services">Explore Services</Link>
                 </Button>

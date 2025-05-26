@@ -9,24 +9,24 @@ import { StaggeredContainer } from "@/components/staggered-container"
 
 export default function AboutPage() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-darkOlive-dark">
       <Navbar />
       <main className="flex-1">
         {/* Hero Section with Olive Background */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-olive text-cream relative overflow-hidden">
+        <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-darkOlive-dark text-cream relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 cream-dot-pattern opacity-20"></div>
           <div className="container-custom">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <AnimationWrapper animation="fade-in-left" className="space-y-6">
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tighter text-cream">About Me</h1>
                 <p className="text-xl text-cream/90 max-w-[600px]">
-                  I'm Opeyemi Ogundeji - but feel free to call me OOG. For over five years, I've been at the forefront
+                  I&apos;m Opeyemi Ogundeji - but feel free to call me OOG. For over five years, I&apos;ve been at the forefront
                   of empowering marginalised groups, driving climate action, decentralising policies, and building
                   sustainable communities.
                 </p>
                 <p className="text-lg text-cream/80">
-                  My work isn't just about making a difference - it's about creating lasting impact and inspiring the
-                  next generation to lead with purpose. Execution, delivery, and impact? That's my zone. I don't just
+                  My work isn&apos;t just about making a difference - it&apos;s about creating lasting impact and inspiring the
+                  next generation to lead with purpose. Execution, delivery, and impact? That&apos;s my zone. I don&apos;t just
                   get things done - I do them exceptionally well, with empathy and strategy.
                 </p>
               </AnimationWrapper>
@@ -49,7 +49,7 @@ export default function AboutPage() {
         </section>
 
         {/* Values Section */}
-        <section className="py-16 md:py-24 bg-cream-light relative">
+        <section className="py-16 md:py-24 bg-darkOlive-dark relative">
           <div className="absolute top-20 left-0 w-32 h-32 olive-dot-pattern opacity-30"></div>
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
@@ -109,7 +109,7 @@ export default function AboutPage() {
         </section>
 
         {/* Passions Section with Olive Pattern Background */}
-        <section className="py-16 md:py-24 bg-cream-pattern relative">
+        <section className="py-16 md:py-24 relative">
           <div className="absolute bottom-10 right-0 w-40 h-40 olive-dot-pattern opacity-30"></div>
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
@@ -203,7 +203,7 @@ export default function AboutPage() {
                   </div>
                   <h3 className="text-2xl font-bold text-olive-dark">Building Sustainable & Inclusive Communities</h3>
                   <p className="text-olive-dark/70">
-                    I believe strong communities are built on collaboration, inclusion, and action. Whether it's
+                    I believe strong communities are built on collaboration, inclusion, and action. Whether it&apos;s
                     mobilising grassroots movements, or creating local development blueprints, I help communities take
                     ownership of their growth and resilience.
                   </p>
@@ -250,20 +250,20 @@ export default function AboutPage() {
             </div>
             <AnimationWrapper animation="scale-in" className="mt-12 text-center">
               <Button asChild size="lg" className="bg-olive text-cream hover:bg-olive-dark">
-                <Link href="/contact">Let's Collaborate</Link>
+                <Link href="/contact">Let&apos;s Collaborate</Link>
               </Button>
             </AnimationWrapper>
           </div>
         </section>
 
         {/* Expertise Section */}
-        <section className="py-16 md:py-24 bg-white relative">
+        <section className="py-16 md:py-24 relative">
           <div className="absolute top-20 right-0 w-40 h-40 olive-dot-pattern opacity-20"></div>
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-olive-dark">My Core Expertise</h2>
               <p className="text-olive-dark/80 max-w-[700px] mx-auto">
-                Areas where I've developed specialized knowledge and skills
+                Areas where I&apos;ve developed specialized knowledge and skills
               </p>
             </AnimationWrapper>
             <StaggeredContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" staggerDelay={200}>
@@ -348,15 +348,15 @@ export default function AboutPage() {
         </section>
 
         {/* CTA Section with Olive Background */}
-        <section className="py-16 md:py-24 bg-olive text-cream relative">
+        <section className="py-16 md:py-24 text-cream relative">
           <div className="absolute top-0 left-0 w-full h-12 transform rotate-180 olive-wave"></div>
           <div className="container-custom text-center">
             <AnimationWrapper animation="scale-in" className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Create Impact Together?</h2>
               <p className="text-xl mb-8 max-w-[700px] mx-auto opacity-90">
-                Let's collaborate on projects that drive meaningful change and create sustainable impact.
+                Let&apos;s collaborate on projects that drive meaningful change and create sustainable impact.
               </p>
-              <Button asChild size="lg" variant="secondary" className="bg-cream text-olive-dark hover:bg-cream-dark">
+              <Button asChild size="lg" className="text-olive-dark hover:bg-cream-dark">
                 <Link href="/contact">Get In Touch</Link>
               </Button>
             </AnimationWrapper>

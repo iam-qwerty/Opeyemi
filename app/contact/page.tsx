@@ -12,19 +12,19 @@ export default function ContactPage() {
       <Navbar />
       <main className="flex-1">
         {/* Hero Section with Olive Background */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-olive text-cream relative overflow-hidden">
+        <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-darkOlive-dark text-cream relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 cream-dot-pattern opacity-20"></div>
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="max-w-3xl mx-auto text-center space-y-6">
               <h1 className="text-4xl md:text-5xl font-bold tracking-tighter">Get In Touch With Me</h1>
-              <p className="text-xl text-cream/90">Let's connect and explore how we can work together</p>
+              <p className="text-xl text-cream/90">Let&apos;s connect and explore how we can work together</p>
             </AnimationWrapper>
           </div>
           <div className="absolute bottom-0 left-0 w-full h-12 olive-wave"></div>
         </section>
 
         {/* Contact Form Section */}
-        <section className="py-16 md:py-24 bg-cream-light relative">
+        <section className="py-16 md:py-24 bg-darkOlive-dark relative">
           <div className="absolute top-20 left-0 w-32 h-32 olive-dot-pattern opacity-30"></div>
           <div className="container-custom">
             <div className="grid md:grid-cols-2 gap-12">
@@ -144,13 +144,13 @@ export default function ContactPage() {
         </section>
 
         {/* Testimonial Submission Section with Olive Pattern */}
-        <section className="py-16 md:py-24 bg-cream-pattern relative">
+        <section className="py-16 md:py-24 bg-darkOlive-dark relative">
           <div className="absolute bottom-10 right-0 w-40 h-40 olive-dot-pattern opacity-30"></div>
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-olive-dark">Share Your Experience</h2>
               <p className="text-olive-dark/80 max-w-[700px] mx-auto">
-                If we've worked together, I'd love to hear about your experience
+                If we&apos;ve worked together, I&apos;d love to hear about your experience
               </p>
             </AnimationWrapper>
 
@@ -224,7 +224,7 @@ export default function ContactPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 md:py-24 bg-white relative">
+        <section className="py-16 md:py-24 bg-darkOlive-dark relative">
           <div className="absolute top-20 right-0 w-40 h-40 olive-dot-pattern opacity-20"></div>
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
@@ -270,9 +270,9 @@ export default function ContactPage() {
             <AnimationWrapper animation="scale-in" className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start a Conversation?</h2>
               <p className="text-xl mb-8 max-w-[700px] mx-auto opacity-90">
-                I'm excited to hear about your project and explore how we can work together.
+                I&apos;m excited to hear about your project and explore how we can work together.
               </p>
-              <Button asChild size="lg" variant="secondary" className="bg-cream text-olive-dark hover:bg-cream-dark">
+              <Button asChild size="lg" className="bg-cream text-olive-dark hover:bg-cream-dark">
                 <Link href="#contact-form">Reach Out Today</Link>
               </Button>
             </AnimationWrapper>

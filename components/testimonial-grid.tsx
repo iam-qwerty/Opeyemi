@@ -69,7 +69,7 @@ export function TestimonialGrid({
         <div className="flex justify-center mt-8">
           {hasMore ? (
             <Button
-              variant={variant === "olive" ? "secondary" : "outline"}
+              // variant={variant === "olive" ? "secondary" : "outline"}
               onClick={handleShowMore}
               className={buttonClasses}
             >
@@ -78,7 +78,7 @@ export function TestimonialGrid({
             </Button>
           ) : (
             <Button
-              variant={variant === "olive" ? "secondary" : "outline"}
+              // variant={variant === "olive" ? "secondary" : "outline"}
               onClick={handleShowLess}
               className={buttonClasses}
             >

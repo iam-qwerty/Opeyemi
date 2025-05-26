@@ -64,23 +64,23 @@ export function Footer() {
           <div>
             <h3 className="font-medium mb-4 text-lavender">Connect</h3>
             <div className="flex space-x-4">
-              <Link href="#" className="text-lavender/70 hover:text-lavender transition-colors">
+              <Link href="#" className="text-accent/80 hover:text-lavender transition-colors">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="#" className="text-lavender/70 hover:text-lavender transition-colors">
+              <Link href="#" className="text-accent/80 hover:text-lavender transition-colors">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="text-lavender/70 hover:text-lavender transition-colors">
+              <Link href="#" className="text-accent/80 hover:text-lavender transition-colors">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" className="text-lavender/70 hover:text-lavender transition-colors">
+              <Link href="#" className="text-accent/80 hover:text-lavender transition-colors">
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" className="text-lavender/70 hover:text-lavender transition-colors">
+              <Link href="#" className="text-accent/80 hover:text-lavender transition-colors">
                 <Youtube className="h-5 w-5" />
                 <span className="sr-only">YouTube</span>
               </Link>

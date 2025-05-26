@@ -19,17 +19,18 @@ export default function ExperiencePage() {
   ]
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-darkOlive-dark">
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-olive text-cream overflow-hidden">
+        <section className="pt-32 pb-16 md:pt-40 md:pb-24 text-cream overflow-hidden">
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="max-w-3xl mx-auto text-center space-y-6">
               <h1 className="text-4xl md:text-5xl font-bold tracking-tighter">My Experience</h1>
               <p className="text-xl text-cream">A journey of impact, leadership, and community transformation</p>
             </AnimationWrapper>
           </div>
+          <div className="absolute bottom-0 left-0 w-full h-12 olive-wave"></div>
         </section>
 
         {/* Timeline Section */}
@@ -129,10 +130,10 @@ export default function ExperiencePage() {
         </section>
 
         {/* Organizations Section */}
-        <section className="py-16 md:py-24 bg-muted">
+        <section className="py-16 md:py-24">
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold">Organizations I've Collaborated With</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">Organizations I&apos;ve Collaborated With</h2>
               <p className="text-muted-foreground max-w-[700px] mx-auto">
                 Proud to have worked alongside these impactful organizations
               </p>
@@ -161,9 +162,9 @@ export default function ExperiencePage() {
           <div className="container-custom">
             <AnimationWrapper animation="scale-in" className="max-w-3xl mx-auto text-center space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold">Interested in Working Together?</h2>
-              <p className="text-xl text-muted-foreground">Let's combine our expertise to create meaningful impact</p>
+              <p className="text-xl text-muted-foreground">Let&apos;s combine our expertise to create meaningful impact</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg">
+                <Button asChild size="lg" variant="default">
                   <Link href="/contact">Get In Touch</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">

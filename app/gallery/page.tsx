@@ -58,11 +58,11 @@ export default function GalleryPage() {
   ]
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-darkOlive-dark">
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-olive text-cream relative overflow-hidden">
+        <section className="pt-32 pb-16 md:pt-40 md:pb-24 text-cream relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 cream-dot-pattern opacity-20"></div>
           <div className="container px-4 md:px-6">
             <AnimationWrapper animation="fade-in-up" className="max-w-3xl mx-auto text-center space-y-6">
@@ -74,7 +74,7 @@ export default function GalleryPage() {
         </section>
 
         {/* Bio Section */}
-        <section className="py-16 md:py-24 bg-cream-light relative">
+        <section className="py-16 md:py-24 relative">
           <div className="absolute top-20 left-0 w-32 h-32 olive-dot-pattern opacity-30"></div>
           <div className="container px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -132,7 +132,7 @@ export default function GalleryPage() {
         </section>
 
         {/* Gallery Section */}
-        <section className="py-16 md:py-24 bg-cream-pattern relative">
+        <section className="py-16 md:py-24 relative">
           <div className="absolute bottom-10 right-0 w-40 h-40 olive-dot-pattern opacity-30"></div>
           <div className="container px-4 md:px-6">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
@@ -151,7 +151,7 @@ export default function GalleryPage() {
                     />
                     <div className="absolute inset-0 bg-olive/10 mix-blend-multiply"></div>
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-olive-dark/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+                  <div className="absolute inset-0 bg-gradient-to-t from-olive-dark/70 to-cream opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
                     <span className="text-cream font-medium">{image.alt}</span>
                     <span className="text-cream/80 text-sm">{image.category}</span>
                   </div>
@@ -162,7 +162,7 @@ export default function GalleryPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-olive text-cream relative">
+        <section className="py-16 md:py-24 text-cream relative">
           <div className="absolute top-0 left-0 w-full h-12 transform rotate-180 olive-wave"></div>
           <div className="container px-4 md:px-6 text-center">
             <AnimationWrapper animation="scale-in" className="space-y-6">
@@ -171,7 +171,7 @@ export default function GalleryPage() {
                 If you need additional photos, biography information, or other media resources for an event or
                 publication, please get in touch.
               </p>
-              <Button asChild size="lg" className="bg-cream text-olive-dark hover:bg-cream-dark">
+              <Button asChild size="lg" className="">
                 <Link href="/contact">Contact Me</Link>
               </Button>
             </AnimationWrapper>

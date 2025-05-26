@@ -17,7 +17,7 @@ export default function ServicesPage() {
       role: "Executive Director",
       organization: "Climate Action Network",
       quote:
-        "Opeyemi's expertise in climate policy and community engagement transformed our approach to advocacy. Their ability to connect policy with real community needs is unmatched.",
+        "Opeyemi&apos;s expertise in climate policy and community engagement transformed our approach to advocacy. Their ability to connect policy with real community needs is unmatched.",
     },
     {
       id: 2,
@@ -33,16 +33,16 @@ export default function ServicesPage() {
       role: "Community Leader",
       organization: "Sustainable Futures",
       quote:
-        "Opeyemi doesn't just talk about community development - she lives it. Their approach empowered our community to take ownership of our development process with remarkable results.",
+        "Opeyemi doesn&apos;t just talk about community development - she lives it. Their approach empowered our community to take ownership of our development process with remarkable results.",
     },
   ]
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-darkOlive-dark">
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-olive text-cream relative overflow-hidden">
+        <section className="pt-32 pb-16 md:pt-40 md:pb-24 text-cream relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 cream-dot-pattern opacity-20"></div>
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="max-w-3xl mx-auto text-center space-y-6">
@@ -54,7 +54,7 @@ export default function ServicesPage() {
         </section>
 
         {/* Services Section */}
-        <section className="py-16 md:py-24 bg-cream-light relative">
+        <section className="py-16 md:py-24 relative">
           <div className="absolute top-20 left-0 w-32 h-32 olive-dot-pattern opacity-30"></div>
           <div className="container-custom">
             <StaggeredContainer className="grid md:grid-cols-2 gap-12 items-start" staggerDelay={300}>
@@ -242,13 +242,13 @@ export default function ServicesPage() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-16 md:py-24 bg-olive text-cream relative">
+        <section className="py-16 md:py-24 text-cream relative">
           <div className="absolute top-0 left-0 w-full h-12 transform rotate-180 olive-wave"></div>
           <div className="absolute bottom-10 right-0 w-40 h-40 cream-dot-pattern opacity-20"></div>
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-cream">What People Say</h2>
-              <p className="text-cream/90 max-w-[700px] mx-auto">Feedback from those I've worked with</p>
+              <p className="text-cream/90 max-w-[700px] mx-auto">Feedback from those I&apos;ve worked with</p>
             </AnimationWrapper>
             <div className="max-w-3xl mx-auto">
               <AnimationWrapper animation="scale-in">
@@ -259,15 +259,15 @@ export default function ServicesPage() {
         </section>
 
         {/* CTA Section */}
-        <ParallaxSection speed={0.05} className="py-16 md:py-24 bg-olive text-cream relative">
+        <ParallaxSection speed={0.05} className="py-16 md:py-24 text-cream relative">
           <div className="absolute top-0 left-0 w-full h-12 transform rotate-180 olive-wave" />
           <div className="container-custom">
             <AnimationWrapper animation="scale-in" className="max-w-3xl mx-auto text-center space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold">Ready to Work Together?</h2>
               <p className="text-xl text-cream/90">
-                Let's collaborate to create meaningful impact and sustainable change
+                Let&apos;s collaborate to create meaningful impact and sustainable change
               </p>
-              <Button asChild size="lg" className="bg-cream text-olive-dark hover:bg-cream-dark">
+              <Button asChild size="lg" className="text-olive-dark hover:bg-cream-dark">
                 <Link href="/contact">Get In Touch</Link>
               </Button>
             </AnimationWrapper>

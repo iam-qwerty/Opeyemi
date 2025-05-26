@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react"
 import { ChevronLeft, ChevronRight, Quote, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 interface Testimonial {
   id: number
@@ -22,7 +23,7 @@ interface TestimonialCarouselProps {
 export function TestimonialCarousel({
   testimonials,
   autoplaySpeed = 5000,
-  variant = "light", // Default to light variant
+  // variant = "light", // Default to light variant
 }: TestimonialCarouselProps) {
   const [activeIndex, setActiveIndex] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
@@ -111,14 +112,15 @@ export function TestimonialCarousel({
               : "translate-x-0 opacity-100"
           }`}
         >
-          <p className={quoteClasses}>"{currentTestimonial.quote}"</p>
+          <p className={quoteClasses}>&quot;{currentTestimonial.quote}&quot;</p>
 
           <div className="flex items-center gap-4">
             <div className={iconBgClasses}>
               {currentTestimonial.avatar ? (
-                <img
+                <Image
                   src={currentTestimonial.avatar || "/placeholder.svg"}
                   alt={currentTestimonial.name}
+                  fill
                   className="h-14 w-14 rounded-full object-cover"
                 />
               ) : (

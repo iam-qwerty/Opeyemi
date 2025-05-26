@@ -119,7 +119,7 @@
 
 /* Decorative elements - updated for dark theme */
 .cream-dot-pattern {
-  background-image: radial-gradient(circle, rgba(231, 230, 251, 0.15) 2px, transparent 2px);
+  background-image: radial-gradient(circle, rgba(231, 230, 251, 0.201) 2px, transparent 2px);
   background-size: 20px 20px;
 }
 
@@ -366,16 +366,16 @@
 
 /* Feature card styles - updated for dark theme */
 .feature-card {
-  @apply bg-darkOlive-lighter rounded-lg p-6 border border-darkOlive-light shadow-sm hover:shadow-md transition-all text-lavender;
+  @apply bg-darkOlive rounded-lg p-6 border border-darkOlive-light shadow-sm hover:shadow-md transition-all text-lavender;
 }
 
-.feature-card-olive {
+/* .feature-card-olive {
   @apply bg-olive text-lavender rounded-lg p-6 border border-olive-light shadow-sm hover:shadow-md transition-all;
 }
 
 .feature-card-cream {
   @apply bg-darkOlive-light text-lavender rounded-lg p-6 border border-darkOlive-lighter shadow-sm hover:shadow-md transition-all;
-}
+} */
 
 /* Button styles - updated for dark theme */
 .btn-olive {
@@ -452,9 +452,9 @@ button {
 }
 
 /* Special case for links */
-a:not(.btn):not(.button):not([class*="bg-"]) {
+/* a:not(.btn):not(.button):not([class*="bg-"]) {
   color: #9ca63b;
-}
+} */
 
 a:hover:not(.btn):not(.button):not([class*="bg-"]) {
   color: #e7e6fb;

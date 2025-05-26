@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Quote, Users } from "lucide-react"
 import { AnimationWrapper } from "@/components/animation-wrapper"
+import Image from "next/image"
 
 interface TestimonialCardProps {
   name: string
@@ -59,7 +60,7 @@ export function TestimonialCard({
       </div>
 
       <p className={quoteClasses}>
-        "{displayQuote}"
+        &quot;{displayQuote}&quot;
         {isLongQuote && (
           <button onClick={() => setIsExpanded(!isExpanded)} className={readMoreClasses}>
             {isExpanded ? "Read less" : "Read more"}
@@ -70,7 +71,7 @@ export function TestimonialCard({
       <div className="flex items-center gap-4">
         <div className={iconBgClasses}>
           {avatar ? (
-            <img src={avatar || "/placeholder.svg"} alt={name} className="h-12 w-12 rounded-full object-cover" />
+            <Image src={avatar || "/placeholder.svg"} alt={name} fill className="h-12 w-12 rounded-full object-cover" />
           ) : (
             <Users className={iconClasses} />
           )}
