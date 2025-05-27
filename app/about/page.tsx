@@ -36,10 +36,10 @@ export default function AboutPage() {
               >
                 <div className="absolute inset-0 border-2 border-cream/20 rounded-lg -z-10 transform rotate-3"></div>
                 <Image
-                  src="/images/ope-portrait-2.png"
+                  src="/ope4.jpg"
                   alt="Opeyemi Ogundeji"
                   fill
-                  className="object-cover rounded-lg"
+                  className="object-cover rounded-lg lg:object-top"
                 />
                 <div className="absolute -bottom-2 -right-2 w-24 h-24 bg-cream/10 rounded-tl-[50px] z-10"></div>
               </AnimationWrapper>
@@ -53,8 +53,8 @@ export default function AboutPage() {
           <div className="absolute top-20 left-0 w-32 h-32 olive-dot-pattern opacity-30"></div>
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-olive-dark">My Personal Values</h2>
-              <p className="text-olive-dark/80 max-w-[700px] mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-lavender">My Personal Values</h2>
+              <p className="text-lavender/75 max-w-[700px] mx-auto">
                 These core values guide my approach to work and life
               </p>
             </AnimationWrapper>
@@ -63,8 +63,8 @@ export default function AboutPage() {
                 <div className="bg-olive/20 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <Heart className="h-8 w-8 text-olive" />
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-olive-dark">Gratitude</h3>
-                <p className="text-olive-dark/70">
+                <h3 className="text-xl font-bold mb-2 text-lavender">Gratitude</h3>
+                <p className="text-lavender-muted">
                   Appreciating opportunities and acknowledging those who contribute to my journey.
                 </p>
               </div>
@@ -72,8 +72,8 @@ export default function AboutPage() {
                 <div className="bg-olive/20 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <Shield className="h-8 w-8 text-olive" />
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-olive-dark">Resilience</h3>
-                <p className="text-olive-dark/70">
+                <h3 className="text-xl font-bold mb-2 text-lavender">Resilience</h3>
+                <p className="text-lavender-muted">
                   Persevering through challenges and adapting to changing circumstances.
                 </p>
               </div>
@@ -81,8 +81,8 @@ export default function AboutPage() {
                 <div className="bg-olive/20 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <Users className="h-8 w-8 text-olive" />
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-olive-dark">Respect</h3>
-                <p className="text-olive-dark/70">
+                <h3 className="text-xl font-bold mb-2 text-lavender">Respect</h3>
+                <p className="text-lavender-muted">
                   Honoring the dignity, perspectives, and contributions of all individuals.
                 </p>
               </div>
@@ -90,8 +90,8 @@ export default function AboutPage() {
                 <div className="bg-olive/20 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <Check className="h-8 w-8 text-olive" />
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-olive-dark">Integrity</h3>
-                <p className="text-olive-dark/70">
+                <h3 className="text-xl font-bold mb-2 text-lavender">Integrity</h3>
+                <p className="text-lavender-muted">
                   Maintaining strong moral principles and ethical standards in all actions.
                 </p>
               </div>
@@ -99,8 +99,8 @@ export default function AboutPage() {
                 <div className="bg-olive/20 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <Smile className="h-8 w-8 text-olive" />
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-olive-dark">Kindness</h3>
-                <p className="text-olive-dark/70">
+                <h3 className="text-xl font-bold mb-2 text-lavender">Kindness</h3>
+                <p className="text-lavender-muted">
                   Approaching every interaction with compassion, empathy, and genuine care.
                 </p>
               </div>

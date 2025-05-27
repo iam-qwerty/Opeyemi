@@ -107,7 +107,7 @@ export default function Home() {
               >
                 <div className="absolute inset-0 border-2 border-cream/20 rounded-lg -z-10 transform rotate-3"></div>
                 <Image
-                  src="/images/ope-portrait-1.png"
+                  src="/ope3.jpg"
                   alt="Opeyemi Ogundeji"
                   fill
                   className="object-cover lg:object-top rounded-lg"

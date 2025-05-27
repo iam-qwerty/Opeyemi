@@ -62,7 +62,7 @@ const config = {
         },
         lavender: {
           DEFAULT: "#E7E6FB", // Main text color
-          muted: "#C5C4E8", // Muted variant
+          muted: "rgba(231, 230, 251, 0.8)", // Muted variant
           dark: "#E5DCBA", // Darker variant
         },
         // Keep olive colors for accents
