@@ -95,7 +95,6 @@ export default function Home() {
                     variant="outline"
                     size="lg"
                     asChild
-                    className="border-lavender bg-transparent text-lavender hover:bg-lavender/10 hover:text-lavender"
                   >
                     <Link href="/contact">Get In Touch</Link>
                   </Button>
@@ -226,7 +225,7 @@ export default function Home() {
 
                 <div className="bg-cream/10 backdrop-blur-sm border border-cream/20 rounded-lg p-6 text-center">
                   <h3 className="text-xl font-bold mb-4 text-cream">Want to share your experience?</h3>
-                  <Button asChild className="bg-cream text-olive-dark hover:bg-cream-dark">
+                  <Button asChild>
                     <Link href="/contact">
                       Leave a Testimonial
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -305,7 +304,7 @@ export default function Home() {
               <div className="stagger-item flex items-center justify-center feature-card-olive">
                 <div className="text-center">
                   <h3 className="text-xl font-bold mb-4 text-cream">Want to collaborate?</h3>
-                  <Button asChild className="bg-cream text-olive-dark hover:bg-cream-dark">
+                  <Button asChild variant="outline">
                     <Link href="/contact">Let&apos;s Talk</Link>
                   </Button>
                 </div>
@@ -413,7 +412,7 @@ export default function Home() {
                 Let&apos;s collaborate on projects that drive meaningful change and create sustainable impact.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="">
+                <Button asChild size="lg">
                   <Link href="/contact">Get In Touch</Link>
                 </Button>
                 <Button
