@@ -114,7 +114,7 @@ export default function AboutPage() {
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-olive-dark">What I Am Passionate About</h2>
-              <p className="text-olive-dark/80 max-w-[700px] mx-auto">Areas where I focus my energy and expertise</p>
+              <p className="text-lavender/75 max-w-[700px] mx-auto">Areas where I focus my energy and expertise</p>
             </AnimationWrapper>
             <div className="space-y-12">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
@@ -134,7 +134,7 @@ export default function AboutPage() {
                     <span className="font-medium">Climate Action & Sustainability</span>
                   </div>
                   <h3 className="text-2xl font-bold text-olive-dark">Driving Climate Action & Sustainability</h3>
-                  <p className="text-olive-dark/70">
+                  <p className="text-lavender-muted">
                     I work at the intersection of policy, advocacy, and grassroots action to champion climate solutions
                     that are inclusive, impactful, and community-driven. From influencing national climate policies to
                     equipping young leaders with tools for local adaptation, I help turn ideas into measurable change.
@@ -149,7 +149,7 @@ export default function AboutPage() {
                     <span className="font-medium">Youth Empowerment</span>
                   </div>
                   <h3 className="text-2xl font-bold text-olive-dark">Empowering the Next Generation</h3>
-                  <p className="text-olive-dark/70">
+                  <p className="text-lavender-muted">
                     Young people are not just the future - they are the now! Through leadership development,
                     capacity-building, and hands-on mentorship, I support youth in taking bold steps in governance,
                     advocacy, and community transformation.
@@ -187,7 +187,7 @@ export default function AboutPage() {
                     <span className="font-medium">Policy & Advocacy</span>
                   </div>
                   <h3 className="text-2xl font-bold text-olive-dark">Shaping Policies that Work for Everyone</h3>
-                  <p className="text-olive-dark/70">
+                  <p className="text-lavender-muted">
                     Great policies should be more than just documents - they should work for people. I bridge the gap
                     between policies and the communities they serve, advocating for decentralised, inclusive governance
                     where every voice matters and real impact happens.
@@ -202,7 +202,7 @@ export default function AboutPage() {
                     <span className="font-medium">Community Development</span>
                   </div>
                   <h3 className="text-2xl font-bold text-olive-dark">Building Sustainable & Inclusive Communities</h3>
-                  <p className="text-olive-dark/70">
+                  <p className="text-lavender-muted">
                     I believe strong communities are built on collaboration, inclusion, and action. Whether it&apos;s
                     mobilising grassroots movements, or creating local development blueprints, I help communities take
                     ownership of their growth and resilience.
@@ -240,7 +240,7 @@ export default function AboutPage() {
                     <span className="font-medium">Nonprofit Excellence</span>
                   </div>
                   <h3 className="text-2xl font-bold text-olive-dark">Strengthening Nonprofits for Greater Impact</h3>
-                  <p className="text-olive-dark/70">
+                  <p className="text-lavender-muted">
                     I help mission-driven organisations scale their work, optimise their impact, and navigate
                     challenges. From strategy and stakeholder engagement to program execution and impact measurement, I
                     ensure nonprofits are equipped for long-term success.
@@ -262,7 +262,7 @@ export default function AboutPage() {
           <div className="container-custom">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-olive-dark">My Core Expertise</h2>
-              <p className="text-olive-dark/80 max-w-[700px] mx-auto">
+              <p className="text-lavender/75 max-w-[700px] mx-auto">
                 Areas where I&apos;ve developed specialized knowledge and skills
               </p>
             </AnimationWrapper>
@@ -275,7 +275,7 @@ export default function AboutPage() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-olive-dark">Training & Capacity-Building</h3>
-                  <p className="text-olive-dark/70">
+                  <p className="text-lavender-muted">
                     Designing transformative learning programs that equip individuals and organisations to lead and
                     advocate effectively for positive systemic change.
                   </p>
@@ -284,18 +284,18 @@ export default function AboutPage() {
               <div className="stagger-item feature-card overflow-hidden">
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-olive-dark">Project Management</h3>
-                  <p className="text-olive-dark/70 mb-4">
+                  <p className="text-lavender-muted mb-4">
                     Executing high-impact development projects with strategic planning, stakeholder engagement, and
                     measurable results.
                   </p>
                   <div className="flex justify-between items-center p-4 bg-cream-light rounded-lg">
                     <div className="text-center">
                       <span className="block text-2xl font-bold text-olive">50+</span>
-                      <span className="text-sm text-olive-dark/70">Projects Led</span>
+                      <span className="text-sm text-lavender-muted">Projects Led</span>
                     </div>
                     <div className="text-center">
                       <span className="block text-2xl font-bold text-olive">10k+</span>
-                      <span className="text-sm text-olive-dark/70">Beneficiaries</span>
+                      <span className="text-sm text-lavender-muted">Beneficiaries</span>
                     </div>
                   </div>
                 </div>
@@ -303,7 +303,7 @@ export default function AboutPage() {
               <div className="stagger-item feature-card overflow-hidden">
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-olive-dark">Leadership & Community Building</h3>
-                  <p className="text-olive-dark/70 mb-4">
+                  <p className="text-lavender-muted mb-4">
                     Mobilising, inspiring, and fostering collaboration to strengthen communities and drive sustainable
                     change.
                   </p>
@@ -317,14 +317,14 @@ export default function AboutPage() {
               <div className="stagger-item feature-card overflow-hidden">
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-olive-dark">Policy Advocacy & Decentralisation</h3>
-                  <p className="text-olive-dark/70 mb-4">
+                  <p className="text-lavender-muted mb-4">
                     Engaging stakeholders, amplifying voices, and shaping inclusive policies that drive real change at
                     all levels.
                   </p>
                   <div className="p-4 border border-cream rounded-lg hover:bg-cream-light transition-colors cursor-pointer">
                     <p className="text-sm font-medium text-olive-dark">Hover to view case study</p>
                     <div className="hidden group-hover:block mt-2">
-                      <p className="text-sm text-olive-dark/70">
+                      <p className="text-sm text-lavender-muted">
                         Successfully advocated for youth inclusion in national climate policy formulation.
                       </p>
                     </div>
@@ -334,7 +334,7 @@ export default function AboutPage() {
               <div className="stagger-item feature-card overflow-hidden">
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-olive-dark">Research & Policy Analysis</h3>
-                  <p className="text-olive-dark/70 mb-4">
+                  <p className="text-lavender-muted mb-4">
                     Generating data-driven insights to inform policies, advocacy strategies, and development
                     initiatives.
                   </p>

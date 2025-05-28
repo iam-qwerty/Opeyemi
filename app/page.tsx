@@ -378,14 +378,14 @@ export default function Home() {
                     Engaging stakeholders, amplifying voices, and shaping inclusive policies that drive real change at
                     all levels.
                   </p>
-                  <div className="p-4 border border-cream rounded-lg hover:bg-cream transition-colors cursor-pointer">
+                  {/* <div className="p-4 border border-cream rounded-lg hover:bg-cream transition-colors cursor-pointer">
                     <p className="text-sm font-medium text-olive-dark">Hover to view case study</p>
                     <div className="hidden group-hover:block mt-2">
                       <p className="text-sm text-lavender/70">
                         Successfully advocated for youth inclusion in national climate policy formulation.
                       </p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="stagger-item bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
@@ -395,7 +395,7 @@ export default function Home() {
                     Generating data-driven insights to inform policies, advocacy strategies, and development
                     initiatives.
                   </p>
-                  <Button variant="outline" className="w-full border-olive text-olive hover:bg-olive hover:text-cream">
+                  <Button variant="outline" className="w-full border-olive text-lavender hover:bg-olive hover:text-cream">
                     View Research Reports
                   </Button>
                 </div>

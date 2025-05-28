@@ -67,7 +67,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-olive-dark">Training & Capacity-Building</h3>
-                  <p className="text-olive-dark/70 mb-4">
+                  <p className="text-lavender-muted mb-4">
                     Customised workshops, masterclasses, and training programs for organisations, youth groups, and
                     professionals on advocacy, leadership, and social impact.
                   </p>
@@ -76,22 +76,22 @@ export default function ServicesPage() {
                       <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
                         <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span className="text-olive-dark/80">Leadership development workshops</span>
+                      <span className="text-lavender-muted">Leadership development workshops</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
                         <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span className="text-olive-dark/80">Advocacy strategy training</span>
+                      <span className="text-lavender-muted">Advocacy strategy training</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
                         <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span className="text-olive-dark/80">Climate action capacity building</span>
+                      <span className="text-lavender-muted">Climate action capacity building</span>
                     </li>
                   </ul>
-                  <Button asChild className="w-full bg-olive text-cream hover:bg-olive-dark">
+                  <Button asChild className="w-full">
                     <Link href="/contact">Book a Session</Link>
                   </Button>
                 </div>
@@ -106,7 +106,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-olive-dark">Speaking Engagements</h3>
-                  <p className="text-olive-dark/70 mb-4">
+                  <p className="text-lavender-muted mb-4">
                     Delivering keynotes, panel discussions, and expert facilitation on climate action/environmental
                     sustainability, youth development, and inclusive community development.
                   </p>
@@ -115,22 +115,22 @@ export default function ServicesPage() {
                       <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
                         <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span className="text-olive-dark/80">Conference keynotes</span>
+                      <span className="text-lavender-muted">Conference keynotes</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
                         <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span className="text-olive-dark/80">Panel moderation</span>
+                      <span className="text-lavender-muted">Panel moderation</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
                         <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span className="text-olive-dark/80">Workshop facilitation</span>
+                      <span className="text-lavender-muted">Workshop facilitation</span>
                     </li>
                   </ul>
-                  <Button asChild className="w-full bg-olive text-cream hover:bg-olive-dark">
+                  <Button asChild className="w-full">
                     <Link href="/contact">Book Me for Your Next Event</Link>
                   </Button>
                 </div>
@@ -145,7 +145,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-olive-dark">Project Strategy & Management</h3>
-                  <p className="text-olive-dark/70 mb-4">
+                  <p className="text-lavender-muted mb-4">
                     Providing expert guidance on designing, implementing, and scaling development projects for long-term
                     impact.
                   </p>
@@ -154,19 +154,19 @@ export default function ServicesPage() {
                       <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
                         <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span className="text-olive-dark/80">Project design and planning</span>
+                      <span className="text-lavender-muted">Project design and planning</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
                         <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span className="text-olive-dark/80">Implementation oversight</span>
+                      <span className="text-lavender-muted">Implementation oversight</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
                         <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span className="text-olive-dark/80">Impact measurement and evaluation</span>
+                      <span className="text-lavender-muted">Impact measurement and evaluation</span>
                     </li>
                   </ul>
                   <div className="bg-cream-light p-4 rounded-lg mb-6">
@@ -174,19 +174,19 @@ export default function ServicesPage() {
                     <div className="space-y-2">
                       <div className="flex justify-between text-sm">
                         <span className="text-olive-dark">Climate Resilience Initiative</span>
-                        <span className="text-olive-dark/70">2024</span>
+                        <span className="text-lavender-muted">2024</span>
                       </div>
                       <div className="flex justify-between text-sm">
                         <span className="text-olive-dark">Youth Leadership Academy</span>
-                        <span className="text-olive-dark/70">2023</span>
+                        <span className="text-lavender-muted">2023</span>
                       </div>
                       <div className="flex justify-between text-sm">
                         <span className="text-olive-dark">Community Development Program</span>
-                        <span className="text-olive-dark/70">2022</span>
+                        <span className="text-lavender-muted">2022</span>
                       </div>
                     </div>
                   </div>
-                  <Button asChild className="w-full bg-olive text-cream hover:bg-olive-dark">
+                  <Button asChild className="w-full">
                     <Link href="/contact">Discuss Your Project</Link>
                   </Button>
                 </div>
@@ -201,7 +201,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-olive-dark">Policy, Advocacy & Nonprofit Consulting</h3>
-                  <p className="text-olive-dark/70 mb-4">
+                  <p className="text-lavender-muted mb-4">
                     Empowering organisations and governments to design inclusive policies, foster meaningful stakeholder
                     engagement, and amplify community voices - turning advocacy into real, lasting impact.
                   </p>
@@ -210,29 +210,29 @@ export default function ServicesPage() {
                       <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
                         <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span className="text-olive-dark/80">Policy development and analysis</span>
+                      <span className="text-lavender-muted">Policy development and analysis</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
                         <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span className="text-olive-dark/80">Advocacy campaign strategy</span>
+                      <span className="text-lavender-muted">Advocacy campaign strategy</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="h-5 w-5 rounded-full bg-olive/20 flex items-center justify-center shrink-0 mt-0.5">
                         <div className="h-2 w-2 rounded-full bg-olive"></div>
                       </div>
-                      <span className="text-olive-dark/80">Organizational development</span>
+                      <span className="text-lavender-muted">Organizational development</span>
                     </li>
                   </ul>
                   <div className="bg-cream-light p-4 rounded-lg mb-6">
                     <h4 className="font-medium mb-2 text-olive-dark">Case Study: Policy Impact</h4>
-                    <p className="text-sm text-olive-dark/70">
+                    <p className="text-sm text-lavender-muted">
                       Successfully advocated for the inclusion of youth representatives in national climate policy
                       formulation, resulting in more inclusive and effective climate action plans.
                     </p>
                   </div>
-                  <Button asChild className="w-full bg-olive text-cream hover:bg-olive-dark">
+                  <Button asChild className="w-full">
                     <Link href="/contact">Schedule a Consultation</Link>
                   </Button>
                 </div>

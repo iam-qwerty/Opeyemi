@@ -111,8 +111,8 @@ export default function BlogPage() {
                   <span>{blogPosts[0].source}</span>
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold text-olive-dark">{blogPosts[0].title}</h2>
-                <p className="text-olive-dark/70">{blogPosts[0].excerpt}</p>
-                <Button asChild className="bg-olive text-cream hover:bg-olive-dark">
+                <p className="text-lavender-muted">{blogPosts[0].excerpt}</p>
+                <Button asChild>
                   <Link href={blogPosts[0].url} target="_blank" rel="noopener noreferrer">
                     Read Full Article
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -129,7 +129,7 @@ export default function BlogPage() {
           <div className="container px-4 md:px-6">
             <AnimationWrapper animation="fade-in-up" className="text-center space-y-4 mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-olive-dark">Latest Articles</h2>
-              <p className="text-olive-dark/80 max-w-[700px] mx-auto">
+              <p className="text-lavender-muted max-w-[700px] mx-auto">
                 Stay updated with my latest insights and features
               </p>
             </AnimationWrapper>
@@ -158,7 +158,7 @@ export default function BlogPage() {
                       <span>{post.source}</span>
                     </div>
                     <h3 className="text-xl font-bold text-olive-dark">{post.title}</h3>
-                    <p className="text-olive-dark/70">{post.excerpt}</p>
+                    <p className="text-lavender-muted">{post.excerpt}</p>
                     <Link
                       href={post.url}
                       className="inline-flex items-center text-olive hover:underline"
@@ -190,7 +190,7 @@ export default function BlogPage() {
                     placeholder="Enter your email"
                     className="flex h-10 w-full rounded-md border border-cream/30 bg-cream/10 px-3 py-2 text-sm text-cream ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-cream/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cream focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   />
-                  <Button type="submit" className="text-olive-dark hover:bg-olive-dark">
+                  <Button type="submit">
                     Subscribe
                   </Button>
                 </form>
