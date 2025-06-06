@@ -42,7 +42,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-medium text-olive-dark">Call</h3>
-                      <p className="text-lavender-muted">+234 123 456 7890</p>
+                      <p className="text-lavender-muted">+2349125314634</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -51,7 +51,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-medium text-olive-dark">Email</h3>
-                      <p className="text-lavender-muted">contact@opeyemiogundeji.com</p>
+                      <p className="text-lavender-muted">theopeyemiogundeji@gmail.com</p>
                     </div>
                   </div>
                 </div>
