@@ -132,7 +132,7 @@ export default function ContactPage() {
                         className="flex w-full rounded-md border border-cream bg-white px-3 py-2 text-sm text-olive-dark ring-offset-background placeholder:text-olive-dark/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-olive focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                       ></textarea>
                     </div>
-                    <Button type="submit" className="w-full bg-olive text-cream hover:bg-olive-dark">
+                    <Button type="submit" className="w-full bg-transparent border border-lavender transition-colors hover:bg-olive hover:border-none">
                       <Send className="mr-2 h-4 w-4" />
                       Send Message
                     </Button>
